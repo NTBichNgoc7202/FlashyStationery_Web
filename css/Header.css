@@ -61,3 +61,13 @@ body{
     float: right;
     margin-left: 5px;
 }
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    .header_logo {
+        display: none;
+    }
+    .header_notify, .header_user{
+        display: none;
+    }
+}
