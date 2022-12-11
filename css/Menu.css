@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.menu{
+    margin: 0px;
+    padding: 0px;
+    background-color: #D8BDC1;
+}
+.menu_bar{
+    margin: 2px 0px;
+    padding: 0px;
+}
+.menu_bar li{
+    list-style: none;
+    display: inline;
+    padding: 0px 15px;
+}
+.menu_bar li a{
+    color: #5D5C78;
+    font-weight: 500;
+}
+.menu_bar li a:hover{
+    color: #F7F8F4;
+    text-decoration: none;
+}
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    .menu_bar{
+        margin: 2px 10px;
+        padding: 0px;
+    }
+    .menu_bar li{
+        padding: 0px 5px;
+    }
+}
