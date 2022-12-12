@@ -9,8 +9,8 @@ body{
     height: max-content;
     background-color: #D8BDC180;
 }
-h5{
-    margin: 0px;
+.footer h5{
+    margin: 0px 0px 5px 0px;
     padding: 0px;
     color: #5D5C78;
 }
@@ -18,13 +18,15 @@ h5{
     margin: 0px;
     padding: 0px;
 }
-.footer li{
+#list li{
     list-style: none;
+    padding: 0px;
+    margin: 5px 0px;
 }
-.footer li a{
+#list li a{
     color: black;
 }
-.footer li a:hover{
+#list li a:hover{
     text-decoration: none;
     font-weight: bold;
 }
@@ -54,8 +56,8 @@ h5{
 }
 #copyright{
     width: 100%;
-    margin: 30px 0px 0px;
-    padding: 10px;
+    margin: 20px 0px 0px;
+    padding: 10px 0px;
     border-top: 1px solid #5D5C78;
     text-align: center;
     color: #5D5C78;
@@ -64,6 +66,15 @@ h5{
 
 /* Màn hình điện thoại */
 @media (max-width: 767px) {
+    #title{
+        font-size: 1.1em;
+    }
+    #list li{
+        margin: 0px;
+    }
+    #list li a{
+        font-size: 0.9em;
+    }
     #footer_follow, #footer_subscribe{
         margin: 10px 0px 0px;
     }
