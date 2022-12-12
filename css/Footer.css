@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.footer{
+    margin: 0px;
+    padding: 10px 0px;
+    height: max-content;
+    background-color: #D8BDC180;
+}
+h5{
+    margin: 0px;
+    padding: 0px;
+    color: #5D5C78;
+}
+.footer ul{
+    margin: 0px;
+    padding: 0px;
+}
+.footer li{
+    list-style: none;
+}
+.footer li a{
+    color: black;
+}
+.footer li a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+#input_email{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #D3D3D3;
+    padding: 1px 10px;
+}
+#btn_subscribe{
+    margin: 4px 0px;
+    padding: 2px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5D5C78;
+    color: white;
+}
+#pay_method{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+#pay_method img{
+    width: 20%;
+    max-width: 40px;
+}
+#copyright{
+    width: 100%;
+    margin: 30px 0px 0px;
+    padding: 10px;
+    border-top: 1px solid #5D5C78;
+    text-align: center;
+    color: #5D5C78;
+}
+
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    #footer_follow, #footer_subscribe{
+        margin: 10px 0px 0px;
+    }
+    #copyright{
+        font-size: 0.8em;
+    }
+}

@@ -29,10 +29,13 @@
 @media (max-width: 767px) {
     .intro_info{
         margin: 0px;
-        padding: 10px;
+        padding: 15px;
     }
     #intro_title h3{
         font-size: 1.1em;
+    }
+    #intro_content{
+        margin: 20px 0px;
     }
     #intro_desc{
         font-size: 0.7em;
