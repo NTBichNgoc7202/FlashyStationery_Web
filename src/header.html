@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <a href=""><img class="header_logo" src="/icons/logo.png"></a>
+                    <a href="Home.html"><img class="header_logo" src="/icons/logo.png"></a>
                 </div>
                 <div class="col-md-6 col-8 align-self-center">
                     <div class="header_search">
@@ -35,16 +35,24 @@
                     <div class="header_icon">
                         <a class="header_cart" href=""><img src="/icons/cart_header.png"></a>
                         <a class="header_notify" href=""><img src="/icons/notification_header.png"></a>
-                        <a class="header_user" href=""><img src="/images/avatar.jpg"><p>Bích Ngọc</p></a>
+                        <div class="header_user">
+                            <a href=""><img src="/images/avatar.jpg"><p>Bích Ngọc</p>
+                                <ul>
+                                    <li><a href="">Hồ sơ của tôi</a></li>
+                                    <li><a href="">Theo dõi đơn hàng</a></li>
+                                    <li><a href="">Đăng xuất</a></li>
+                                </ul>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <p class="menu" w3-include-html="Menu.html"></p>
-        <script>
-            w3.includeHTML();
-        </script>
+    <div class="menu" w3-include-html="Menu.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 
 </html>
