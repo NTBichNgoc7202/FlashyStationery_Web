@@ -1,16 +1,20 @@
-.intro_info{
+.information{
     margin: 0px;
     padding: 30px 0px;
     height: max-content;
     background-color: #F7F8F4;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
-#intro_title{
+#info_title{
     font-family: 'Times New Roman', Times, serif;
     color: #5D5C78;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #5D5C78;
+}
+#intro{
+    margin: 0px;
+    padding: 0px;
 }
 #intro_content{
     margin: 30px 0px;
@@ -23,23 +27,60 @@
 #intro_desc{
     text-align: justify;
 }
+#policy{
+    margin: 50px 0px 0px;
+}
+#policy_info{
+    margin: 10px;
+}
+#policy_info h5 a{
+    text-decoration: none;
+    color: #5D5C78;
+}
+#policy_info ol li{
+    color: #5D5C78;
+    width: max-content;
+    height: max-content;
+    padding: 3px 0px;
+}
+#policy_info ol li a{
+    text-decoration: none;
+    color: #5D5C78;
+}
+#policy_info a:hover, #policy_info li:hover{
+    color: #D8BDC1;
+}
 
 
 /* Màn hình điện thoại */
 @media (max-width: 767px) {
-    .intro_info{
+    .information{
         margin: 0px;
         padding: 15px;
     }
-    #intro_title h3{
+    #info_title h3{
         font-size: 1.1em;
     }
     #intro_content{
-        margin: 20px 0px;
+        margin: 10px 0px;
     }
     #intro_desc{
         font-size: 0.7em;
         margin: 10px 0px;
         padding: 0px;
+    }
+    #policy{
+        margin: 10px 0px;
+    }
+    #policy h5{
+        margin: 0px;
+        font-size: 0.9em;
+    }
+    #policy ol{
+        padding-left: 25px;
+    }
+    #policy li{
+        margin: 0px;
+        font-size: 0.7em;
     }
 }
