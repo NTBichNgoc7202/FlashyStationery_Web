@@ -37,13 +37,13 @@
                             <h5>Thông tin tài khoản</h5>
                             <form id="info">
                                 <label class="col-md-2 col-12" for="last_name">Họ*</label>
-                                <input class="col-md-6 col-8" id="last_name" type="text"><br>
+                                <input class="col-md-6 col-8" id="last_name" type="text" required><br>
 
                                 <label class="col-md-2 col-12" for="first_name">Tên*</label>
-                                <input class="col-md-6 col-8" id="first_name" type="text"><br>
+                                <input class="col-md-6 col-8" id="first_name" type="text" required><br>
 
                                 <label class="col-md-2 col-12" for="phone_numb">Số điện thoại*</label>
-                                <input class="col-md-6 col-8" id="phone_numb" type="text" disabled>
+                                <input class="col-md-6 col-8" id="phone_numb" type="text" disabled required>
                                 <a class="col-md-4 col-4" href="">Thay đổi</a><br>
 
                                 <label class="col-md-2 col-12" for="email">Email</label>
@@ -56,7 +56,13 @@
                                 <input type="radio" id="female" name="sex" value="female" style="margin-left: 20px;">
                                 <label for="female">Nữ</label><br>
 
-                                <label class="col-md-2 col-12"
+                                <label class="col-md-2 col-12">Ngày sinh*</label>
+                                <input class="col-md-4 col-6" type="date" required><br>
+
+                                <div class="row justify-content-center">
+                                    <button id="btn_submit" type="submit">Lưu thay đổi</button>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
