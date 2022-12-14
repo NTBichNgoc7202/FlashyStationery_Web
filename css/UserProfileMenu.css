@@ -1,0 +1,33 @@
+#user_profile_menu{
+    background-color: white;
+    padding: 15px;
+}
+#menu_title{
+    text-transform: uppercase;
+    color: #D8BDC1;
+}
+#user_profile_menu ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#user_profile_menu ul li{
+    border-bottom: 1px solid #D3D3D3;
+}
+#user_profile_menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #5D5C78;
+    padding: 5px 10px;
+}
+#user_profile_menu ul li a.active{
+    background-color: #FBD3CA80;
+    font-weight: 500;
+}
+#user_profile_menu ul li a:hover:not(.active){
+    background-color: #D3D3D380;
+}
+#user_profile_menu ul li a:active{
+    color: red;
+}

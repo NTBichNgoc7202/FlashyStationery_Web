@@ -9,8 +9,9 @@ body{
     background-color: #5D5C78;
     height: max-content;
     display: flex;
+    justify-content: center;
 }
-.header_logo{
+#header_logo img{
     max-width: 100%;
     max-height: 60px;
 }
@@ -93,8 +94,8 @@ body{
 
 /* Màn hình điện thoại */
 @media (max-width: 767px) {
-    .header_logo {
-        display: none;
+    #header_logo {
+        margin-bottom: 5px;
     }
     .header_notify, .header_user p{
         display: none;
