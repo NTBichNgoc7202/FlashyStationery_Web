@@ -1,0 +1,62 @@
+.new_info{
+    margin: 0px;
+    padding: 30px 0px;
+    height: max-content;
+    background-color: #F7F8F4;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#new_title{
+    font-family: 'Times New Roman', Times, serif;
+    color: #5D5C78;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #5D5C78;
+}
+#new_content{
+    margin: 30px 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+}
+#new_content.left{
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    -webkit-line-clamp: 2;
+    margin-right: 23px;
+}
+#new_content.right{
+width: 358px;
+    display: flex;
+    flex-direction: column;
+    -webkit-line-clamp: 2;
+    margin-left: 23px;
+}
+#intro_logo{
+    width: 100%;
+    height: min-content;
+}
+#intro_desc{
+    text-align: justify;
+}
+
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    .intro_info{
+        margin: 0px;
+        padding: 15px;
+    }
+    #intro_title h3{
+        font-size: 1.1em;
+    }
+    #intro_content{
+        margin: 20px 0px;
+    }
+    #intro_desc{
+        font-size: 0.7em;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+}
