@@ -506,7 +506,7 @@
                                                         <td>2022-12-12 19:10</td>
                                                         <td>100392</td>
                                                         <td>Bao vở hình mèo mắt lác</td>
-                                                        <td class="text-right">VND 1.200</td>
+                                                        <td class="text-right">VND 1,200</td>
                                                         <td class="text-right">20</td>
                                                         <td class="text-right">VND 24,000</td>
                                                     </tr>
@@ -579,11 +579,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>Tẩy mini hình vịt vô tri</td>
-                                                                <td class="text-right">VND 8,150,000</td>
+                                                                <td class="text-right">VND 8,148,000</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Bao vở hình mèo mắt lác</td>
-                                                                <td class="text-right">VND 5,360,600</td>
+                                                                <td class="text-right">VND 5,360,400</td>
                                                             </tr>                                                            
                                                         </tbody>
                                                     </table>
@@ -905,9 +905,8 @@
                                 <input type="text" class="form-control form-control-user" id="taskName">
                             </div>
                             <div class="col-sm-6">
-                                <label for="taskName" style="color: #5d5c78; font-weight: bold;">Deadline:</label><br>
-                                <input type="text" class="form-control form-control-user" id="taskDeadline"
-                                    placeholder="VD: 8:00AM 12/12/2022">
+                                <label for="taskDeadline" style="color: #5d5c78; font-weight: bold;">Deadline:</label><br>
+                                <input type="datetime-local" class="form-control form-control-user" id="taskDeadline" required>
                             </div>
                         </div>
                     </form>
@@ -919,6 +918,8 @@
             </div>
         </div>
     </div>
+    <!-- End Task Modal -->
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
