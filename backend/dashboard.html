@@ -506,7 +506,7 @@
                                                         <td>2022-12-12 19:10</td>
                                                         <td>100392</td>
                                                         <td>Bao vở hình mèo mắt lác</td>
-                                                        <td class="text-right">VND 1.200</td>
+                                                        <td class="text-right">VND 1,200</td>
                                                         <td class="text-right">20</td>
                                                         <td class="text-right">VND 24,000</td>
                                                     </tr>
@@ -579,11 +579,11 @@
                                                             </tr>
                                                             <tr>
                                                                 <td>Tẩy mini hình vịt vô tri</td>
-                                                                <td class="text-right">VND 8,150,000</td>
+                                                                <td class="text-right">VND 8,148,000</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>Bao vở hình mèo mắt lác</td>
-                                                                <td class="text-right">VND 5,360,600</td>
+                                                                <td class="text-right">VND 5,360,400</td>
                                                             </tr>                                                            
                                                         </tbody>
                                                     </table>
@@ -599,7 +599,7 @@
                                                 <div class="bg-overlay bg-overlay--violet"></div>
                                                 <h3>
                                                     <i class="zmdi zmdi-account-calendar"></i><script>;document.write(new Date().toLocaleDateString());</script></h3>
-                                                <button class="au-btn-plus">
+                                                <button class="au-btn-plus" href="#" data-toggle="modal" data-target="#taskModal">
                                                     <i class="zmdi zmdi-plus"></i>         
                                                 </button>
                                             </div>
@@ -669,9 +669,6 @@
                                                 <div class="bg-overlay bg-overlay--violet"></div>
                                                 <h3>
                                                     <i class="zmdi zmdi-comment-text"></i>Tin nhắn</h3>
-                                                <button class="au-btn-plus">
-                                                    <i class="zmdi zmdi-plus"></i>
-                                                </button>
                                             </div>
                                             <div class="au-inbox-wrap js-inbox-wrap">
                                                 <div class="au-message js-list-load">
@@ -843,19 +840,20 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="copyright">
-                                            <p>&copy 2022 Flashy Stationery. Tất cả quyền được bảo lưu</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div>                            
                             </div>
                         </div>
                    
             <!-- End of Main Content -->
-
+            <!-- Footer -->
+            <footer class="sticky-footer" style="background-color: #F7F8F4;">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span style="color: #5d5c78;">&copy 2022 Flashy Stationery. Tất cả quyền được bảo lưu</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
         </div>
         <!-- End of Content Wrapper -->
 
@@ -873,19 +871,54 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Bạn có chắc muốn thoát?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+                        <span aria-hidden="true" style="color: #5d5c78;">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Chọn "Đăng xuất" để kết thúc phiên đăng nhập của bạn.</div>
                 <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="login.html">Đăng xuất</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Logout Modal -->
+
+    <!-- Task Modal -->
+    <div class="modal fade" id="taskModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Làm Task Vui Vẻ!</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #5d5c78;">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <label for="taskName" style="color: #5d5c78; font-weight: bold;">Việc cần làm:</label><br>
+                                <input type="text" class="form-control form-control-user" id="taskName">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="taskDeadline" style="color: #5d5c78; font-weight: bold;">Deadline:</label><br>
+                                <input type="datetime-local" class="form-control form-control-user" id="taskDeadline" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="dashboard.html">Thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Task Modal -->
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

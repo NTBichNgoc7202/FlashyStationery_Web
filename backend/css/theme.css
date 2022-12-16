@@ -74,6 +74,7 @@ p {
 
 .table-responsive {
     padding-right: 1px;
+    overflow-y: auto;
 }
 
 .card {
@@ -4242,7 +4243,7 @@ section {
     font-weight: 400;
     text-transform: capitalize;
     line-height: 1;
-    padding: 22px 40px;
+    padding: 22px 15px;
     white-space: nowrap;
 }
 
@@ -4253,7 +4254,7 @@ section {
 
 .table-earning tbody td {
     color: #808080;
-    padding: 12px 40px;
+    padding: 12px 15px;
     white-space: nowrap;
 }
 
@@ -4261,7 +4262,10 @@ section {
     padding-left: 15px;
     padding-right: 65px;
 }
-
+.table-earning tbody td.text-center {
+    padding-left: 20px;
+    padding-right: 0px;
+}
 .table-earning tbody tr:hover td {
     color: #555;
     cursor: pointer;
@@ -14647,3 +14651,41 @@ section {
 .vue-lists ul, .vue-lists ol {
     padding-left: 30px;
 }
+.tm-product-delete-icon {
+    font-size: 0.8rem;
+    color: #fff;
+}
+.tm-product-delete-link {
+    padding: 0px;
+    border-radius: 50%;
+    background-color: #5d5c78;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.tm-product-delete-link:hover .tm-product-delete-icon {
+    color: #FBD3CA;
+}
+input[type="checkbox"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    outline: 1px solid #5d5c78 !important ;
+    background-position: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    transition: all 0.1s linear;
+  }
+  input[type="checkbox"]:checked {
+    background: url(../images/check-mark.png) #5d5c78 center no-repeat;
+  }
+  input[type="checkbox"]:focus {
+    outline: 1px;
+    box-shadow: none;
+  }

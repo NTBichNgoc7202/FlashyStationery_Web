@@ -786,19 +786,19 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+          labels: ["2017", "2018", "2019", "2020", "2021", "2022"],
           type: 'line',
           defaultFontFamily: 'Poppins',
           datasets: [{
-            data: [0, 7, 3, 5, 2, 10, 7],
-            label: "Expense",
-            backgroundColor: 'rgba(0,103,255,.15)',
-            borderColor: 'rgba(0,103,255,0.5)',
+            data: [218, 284, 412, 271, 334, 388],
+            label: "Sản phẩm bán ra",
+            backgroundColor: 'rgba(93,92,120,.15)',
+            borderColor: 'rgba(93,92,120,0.5)',
             borderWidth: 3.5,
             pointStyle: 'circle',
             pointRadius: 5,
             pointBorderColor: 'transparent',
-            pointBackgroundColor: 'rgba(0,103,255,0.5)',
+            pointBackgroundColor: 'rgba(93,92,120,0.5)',
           },]
         },
         options: {
@@ -833,7 +833,7 @@
               },
               scaleLabel: {
                 display: false,
-                labelString: 'Month'
+                labelString: 'Năm'
               },
               ticks: {
                 fontFamily: "Poppins"
@@ -847,7 +847,7 @@
               },
               scaleLabel: {
                 display: true,
-                labelString: 'Value',
+                labelString: 'Sản phẩm',
                 fontFamily: "Poppins"
               },
               ticks: {
@@ -881,9 +881,9 @@
             {
               label: "My First dataset",
               data: [65, 59, 80, 81, 56, 55, 40],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "rgba(93,92,120, 0.9)",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "rgba(93,92,120, 0.5)",
               fontFamily: "Poppins"
             },
             {
@@ -942,16 +942,16 @@
             {
               label: "My First dataset",
               data: [65, 59, 66, 45, 56, 55, 40],
-              borderColor: "rgba(0, 123, 255, 0.6)",
+              borderColor: "rgba(93,92,120, 0.6)",
               borderWidth: "1",
-              backgroundColor: "rgba(0, 123, 255, 0.4)"
+              backgroundColor: "rgba(93,92,120, 0.4)"
             },
             {
               label: "My Second dataset",
               data: [28, 12, 40, 19, 63, 27, 87],
-              borderColor: "rgba(0, 123, 255, 0.7",
+              borderColor: "rgba(93,92,120, 0.7",
               borderWidth: "1",
-              backgroundColor: "rgba(0, 123, 255, 0.5)"
+              backgroundColor: "rgba(93,92,120, 0.5)"
             }
           ]
         },
@@ -998,9 +998,9 @@
             },
             {
               label: "My Second dataset",
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "rgba(93,92,120, 0.9)",
               borderWidth: "1",
-              backgroundColor: "rgba(0, 123, 255, 0.5)",
+              backgroundColor: "rgba(93,92,120, 0.5)",
               pointHighlightStroke: "rgba(26,179,148,1)",
               data: [16, 32, 18, 26, 42, 33, 44]
             }
@@ -1060,15 +1060,15 @@
           datasets: [{
             data: [45, 25, 20, 10],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
-              "rgba(0, 123, 255,0.5)",
+              "rgba(93,92,120,0.9)",
+              "rgba(93,92,120,0.7)",
+              "rgba(93,92,120,0.5)",
               "rgba(0,0,0,0.07)"
             ],
             hoverBackgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
-              "rgba(0, 123, 255,0.5)",
+              "rgba(93,92,120,0.9)",
+              "rgba(93,92,120,0.7)",
+              "rgba(93,92,120,0.5)",
               "rgba(0,0,0,0.07)"
             ]
 
@@ -1111,15 +1111,15 @@
           datasets: [{
             data: [45, 25, 20, 10],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
-              "rgba(0, 123, 255,0.5)",
+              "rgba(93,92,120,0.9)",
+              "rgba(93,92,120,0.7)",
+              "rgba(93,92,120,0.5)",
               "rgba(0,0,0,0.07)"
             ],
             hoverBackgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.7)",
-              "rgba(0, 123, 255,0.5)",
+              "rgba(93,92,120,0.9)",
+              "rgba(93,92,120,0.7)",
+              "rgba(93,92,120,0.5)",
               "rgba(0,0,0,0.07)"
             ]
 
@@ -1160,11 +1160,11 @@
           datasets: [{
             data: [15, 18, 9, 6, 19],
             backgroundColor: [
-              "rgba(0, 123, 255,0.9)",
-              "rgba(0, 123, 255,0.8)",
-              "rgba(0, 123, 255,0.7)",
+              "rgba(93,92,120,0.9)",
+              "rgba(93,92,120,0.8)",
+              "rgba(93,92,120,0.7)",
               "rgba(0,0,0,0.2)",
-              "rgba(0, 123, 255,0.5)"
+              "rgba(93,92,120,0.5)"
             ]
 
           }],
@@ -1206,9 +1206,9 @@
             {
               label: "My First dataset",
               data: [40, 55, 75, 81, 56, 55, 40],
-              borderColor: "rgba(0, 123, 255, 0.9)",
+              borderColor: "rgba(93,92,120, 0.9)",
               borderWidth: "0",
-              backgroundColor: "rgba(0, 123, 255, 0.5)"
+              backgroundColor: "rgba(93,92,120, 0.5)"
             }
           ]
         },
