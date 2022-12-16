@@ -1,33 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Shop Flashy Stationery</title>
+        <title>Shop</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/shop.css" >
 
-        <link rel="stylesheet" href="/css/shop.css">
+         <!-- Gắn Header, Footer -->
+         <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-        <!-- Gắn Header  -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+         <!-- Dùng Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
     </head>
     <body>
-        <p class="Header" w3-include-html="Header.html"></p>
+        <div class="Header" w3-include-html="Header.html"></div>
+
+        <div class="">
+            <div class="banner-collection-header">
+                <img src="" />
+            </div>
+        </div>
+
+        <div class="header-navigate clearfix mb15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pd5">
+                        <ol class="breadcrumb breadcrumb-arrow">
+                            <li><a href="/" target="_self">Trang chủ</a></li>
+                            
+                            <li><i class="fa fa-angle-right"></i></li>
+                            <li><a href="/collections" target="_self">Danh mục</a></li>
+                            
+                            
+                            <li><i class="fa fa-angle-right"></i></li>
+                            <li class="active"><span>Tất cả sản phẩm</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="collection" class="clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="wrap-filter clearfix mb15">
+                
+                <div class="group-collection" aria-expanded="true">
+                    <div class="title-block dropdown-filter">
+                        
+                        <h3 class="title-group">DANH MỤC SẢN PHẨM</h3>
+                        
+                        <i class="fa fa-minus flexbox-grid-default flexbox-justifyContent-center flexbox-alignItems-center" aria-hidden="true"></i>
+                    </div>
+                    <div class="filter-box">
+                        <ul id="menusidebarleft" class="menu-collection clearfix mb15">
+                            
+                            
+                            <li class="">
+                                <a href="/collections/t-shirts" title="VỞ">VỞ</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/shirts" title="SỔ">SỔ</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/sweaters" title="DỤNG CỤ HỌC TẬP">DỤNG CỤ HỌC TẬP</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/hoodies" title="FILE">FILE</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/shorts" title="NHÃN VỠ">NHÃN VỠ</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/bags" title="HỘP BÚT">HỘP BÚT</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/perfume" title="DỒ TRANG TRÍ">DỒ TRANG TRÍ</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="">
+                                <a href="/collections/jacket" title="DỒ TRANG TRÍ">DỒ TRANG TRÍ</a>
+                            </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="Footer" w3-include-html="Footer.html"></div>
         <script>
             w3.includeHTML();
         </script>
-        <section class ="product-details">
-                <div class="product-images">
-                    <img src="/images/avatar.jpg" class="active" alt="">
-                </div>
-            <div class="details">
-                <h2 class="product-short-des">Sổ kế hoạch lò xo kép B5 Study Planner 160 trang</h2>
-                <h2 class="procduct-price">47.000Đ</h2>
-            </div>
         
-        </section>
-        <footer>
-
-        </footer>
     </body>
 </html>
