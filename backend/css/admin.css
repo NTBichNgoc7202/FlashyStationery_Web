@@ -1821,11 +1821,11 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #6e707e;
-  background-color: #fff;
+  color: #5d5c78;
+  background-color: #F7F8F4;
   background-clip: padding-box;
-  border: 1px solid #d1d3e2;
-  border-radius: 0.35rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -1837,7 +1837,7 @@ pre code {
 
 .form-control::-ms-expand {
   background-color: transparent;
-  border: 0;
+  border: 30px;
 }
 
 .form-control:-moz-focusring {
@@ -1846,9 +1846,9 @@ pre code {
 }
 
 .form-control:focus {
-  color: #6e707e;
+  color: #5d5c78;
   background-color: #fff;
-  border-color: #bac8f3;
+  border-color: #5d5c78;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
 }
@@ -2270,7 +2270,7 @@ textarea.form-control {
   }
   .form-inline .input-group,
   .form-inline .custom-select {
-    width: auto;
+    width: 100%;
   }
   .form-inline .form-check {
     display: flex;

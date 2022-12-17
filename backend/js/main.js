@@ -1647,7 +1647,7 @@
     console.log(error);
   }
 
-  // Chatbox
+  // Open Chatbox
   try {
     var inbox_wrap = $('.js-inbox');
     var message = $('.au-message__item');
@@ -1656,6 +1656,22 @@
 
       that.on('click', function(){
         $(this).parent().parent().parent().toggleClass('show-chat-box');
+      });
+    });
+    
+
+  } catch (error) {
+    console.log(error);
+  }
+  // Close Chatbox
+  try {
+    var chatbox = $('.au-chat');
+    var back = $('.js-close-inbox');
+    back.each(function(){
+      var that = $(this);
+
+      that.on('click', function(){
+        chatbox.parent().removeClass('show-chat-box')
       });
     });
     

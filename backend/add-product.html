@@ -319,9 +319,127 @@
                     </ul>
                 </nav>
                 <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
-                    
+            <!-- Begin Page Content -->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0" style="color: #5d5c78;">Thêm sản phẩm</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-12">
+                              <form action="" class="tm-edit-product-form">
+                                <div class="form-group mb-3">
+                                  <label style="color: #5d5c78;"
+                                    for="name"
+                                    >Tên sản phẩm
+                                  </label>
+                                  <input
+                                    id="name"
+                                    name="name"
+                                    type="text"
+                                    class="form-control"
+                                    required
+                                    style="border-radius: 20px;"
+                                  />
+                                </div>
+                                <div class="form-group mb-3">
+                                  <label style="color: #5d5c78;"
+                                    for="description"
+                                    >Mô tả</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    rows="3"
+                                    required
+                                    style="border-radius: 20px;"
+                                  ></textarea>
+                                </div>
+                                <div class="form-group mb-3">
+                                  <label style="color: #5d5c78;"
+                                    for="category"
+                                    >Danh mục sản phẩm</label
+                                  >
+                                  <select
+                                    class="custom-select mr-1 multiselect-dropdown"
+                                    id="category" multiple onchange="console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))"
+                                    multiselect-hide-x="true" multiselect-search="true" 
+                                    multiselect-select-all="true" style="position: fixed;"
+                                  >
+                                    <option value="1">Vở</option>
+                                    <option value="2">Sổ</option>
+                                    <option value="3">Dụng cụ học tập</option>
+                                    <option value="4">File</option>
+                                    <option value="5">Hộp bút</option>
+                                    <option value="6">Nhãn vở</option>
+                                    <option value="7">Giấy bao các loại</option>
+                                    <option value="8">Đồ trang trí</option>
+                                    <option value="9">Flash Sale</option>
+                                    <option value="10">Top Sale</option>
+                                    <option value="11">Sản phẩm mới</option>
+                                    <option value="12">Tồn kho</option>
+                                  </select>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                        <label style="color: #5d5c78;"
+                                          for="unit_price"
+                                          >Đơn giá
+                                        </label>
+                                        <input
+                                          id="unit_price"
+                                          name="unit_price"
+                                          type="text"
+                                          class="form-control"
+                                          data-large-mode="true"
+                                          placeholder="VND 0,000"
+                                          style="border-radius: 20px;"
+                                        />
+                                      </div>
+                                      <div class="form-group mb-3 col-xs-12 col-sm-6">
+                                        <label style="color: #5d5c78;"
+                                          for="stock"
+                                          >Tồn kho
+                                        </label>
+                                        <input
+                                          id="stock"
+                                          name="stock"
+                                          type="text"
+                                          class="form-control"
+                                          style="border-radius: 20px;"
+                                          required
+                                        />
+                                      </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
+                                <div style="height: 35px;"></div>
+                              <div class="tm-product-img-dummy mx-auto">
+                                <i
+                                  class="fas fa-cloud-upload-alt tm-upload-icon"
+                                  onclick="document.getElementById('fileInput').click();"
+                                ></i>
+                              </div>
+                              <div class="custom-file mt-3 mb-3">
+                                <input id="fileInput" type="file" style="display:none;" />
+                                <input
+                                  type="button"
+                                  class="btn btn-primary btn-block mx-auto"
+                                  value="TẢI LÊN HÌNH ẢNH"
+                                  onclick="document.getElementById('fileInput').click();"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <a class="au-btn au-btn-load"  href="product.html" style="width: 100%; text-align: center;">Thêm sản phẩm mới</a>
+                            </div>
+                          </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- End of Main Content -->
             <!-- Footer -->
             <footer class="sticky-footer" style="background-color: #F7F8F4;">
@@ -362,52 +480,8 @@
             </div>
         </div>
     </div>
-    <!-- End Logout Modal -->
-     
-    <!-- Remove Modal-->
-    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Bạn có chắc muốn xóa?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="color: #5d5c78;">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Chọn "Xác nhận" để xóa.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                    <a class="btn btn-primary" href="login.html">Xác nhận</a>
-                </div>
-            </div>
-        </div>
-    </div>
- <!-- End Remove Modal -->
-
-    <!-- Category Modal -->
-    <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form class="user">
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <label for="taskName" style="color: #5d5c78; font-weight: bold;">Nhập Tên Danh Mục Mới</label><br>
-                                <input type="text" class="form-control form-control-user" id="categoryName">
-                            </div>                            
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                    <a class="btn btn-primary" href="product.html">Thêm</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Category Modal -->
+    <!-- End Logout Modal -->  
+   
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -426,6 +500,15 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+    <!-- Multi Select -->
+    <script src="js/multiselect-dropdown.js"></script>
+    
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
 
     <!-- Vendor JS       -->
     <script src="vendor/slick/slick.min.js">
@@ -442,7 +525,6 @@
     <script src="vendor/chartjs/Chart.bundle.min.js"></script>
     <script src="vendor/select2/select2.min.js">
     </script>
-
     <!-- Main JS-->
     <script src="js/main.js"></script>
 
