@@ -5769,6 +5769,7 @@ a.close.disabled {
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
+  color: #5d5c78;
 }
 
 .modal-body {
@@ -9834,7 +9835,7 @@ a:focus {
 }
 
 .scroll-to-top {
-  position: fixed;
+  position: absolute;
   right: 1rem;
   bottom: 1rem;
   display: none;
@@ -9842,7 +9843,7 @@ a:focus {
   height: 2.75rem;
   text-align: center;
   color: #fff;
-  background: rgba(90, 92, 105, 0.5);
+  background: rgba(93,92,120, 1);
   line-height: 46px;
 }
 
@@ -10993,7 +10994,7 @@ form.user .btn-user {
 }
 
 .error {
-  color: #5a5c69;
+  color: #5d5c78;
   font-size: 7rem;
   position: relative;
   line-height: 1;
@@ -11138,7 +11139,7 @@ form.user .btn-user {
   left: 2px;
   text-shadow: -1px 0 #e74a3b;
   top: 0;
-  color: #5a5c69;
+  color: #5d5c78;
   background: #f8f9fc;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);

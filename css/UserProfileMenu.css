@@ -27,6 +27,7 @@
 }
 #user_profile_menu ul li a:hover:not(.active){
     background-color: #D3D3D380;
+    font-weight: 500;
 }
 #user_profile_menu ul li a:active{
     color: red;

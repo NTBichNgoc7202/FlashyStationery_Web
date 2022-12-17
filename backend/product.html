@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flashy Admin - Manage Products</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Custom styles for this template-->
+    <link href="css/admin.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+                <img src="images/logo1.png" style="" class="sidebar-brand-text mx-3"></img>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <!-- Nav Item - Products -->
+            <li class="nav-item active">
+                <a class="nav-link" href="product.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Quản lý sản phẩm</span></a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Biểu đồ</span></a>
+            </li>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Trang</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Màn hình đăng nhập:</h6>
+                        <a class="collapse-item" href="login.html">Đăng nhập</a>
+                        <a class="collapse-item" href="register.html">Đăng ký</a>
+                        <a class="collapse-item" href="forgot-password.html">Quên mật khẩu</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header" style="font-family:Verdana, Geneva, Tahoma, sans-serif">Trang khác:</h6>
+                        <a class="collapse-item" href="404.html">Trang lỗi 404</a>
+                        <a class="collapse-item" href="blank.html">Trang trống</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Staff -->
+            <li class="nav-item">
+                <a class="nav-link" href="staff.html">
+                    <i class="fas fa-user"></i>
+                    <span>Nhân viên</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Tìm kiếm..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw" style="color: #5d5c78;"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw" style="color: #5d5c78;"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Thông báo
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">15 tháng 12, 2022</div>
+                                        <span class="font-weight-bold">Báo cáo tháng được update!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">14 tháng 14, 2022</div>
+                                        Ghi nhận 1 yêu cầu hoàn trả đơn. Kiểm tra nhanh nào!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">12 tháng 12, 2022</div>
+                                        Đơn hàng chưa xét duyệt còn 213 đơn! Duyệt đơn nhanh điiii!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Hiển thị thêm</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw" style="color: #5d5c78;"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Tin nhắn
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="images/avatar1.jpg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Ad ơi, giấy này có xài được cho binder 3 còng hông dị ạ?</div>
+                                        <div class="small text-gray-500">Bánh Bèo · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="images/avatar2.jpg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Ad ơi, mình có đơn muốn hoàn trả do đồ shop giao bị hỏng ấy, 
+                                            có cả video unbox lun. Mà sao mình gửi yêu cầu được 2 hôm rồi mà chưa thấy xét duyệt gì hết></div>
+                                        <div class="small text-gray-500">Bánh Đúc  · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="images/avatar3.jpg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Plan đợt sales 12.12 này của m đạt doanh thu tốt dễ sợ, chị đệ đơn tăng lương cho m nhe</div>
+                                        <div class="small text-gray-500">Sếp · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Ăn bánh giò hông? Ai bán cho mà ăn :P</div>
+                                        <div class="small text-gray-500">Bánh Giò · 3d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Hiển thị thêm</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Khoa Trương</span>
+                                <img class="img-profile rounded-circle"
+                                    src="images/avatar4.jpg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2" style="color: #FBD3CA;"></i>
+                                    Hồ sơ cá nhân
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2" style="color: #FBD3CA;"></i>
+                                    Cài đặt
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2" style="color: #FBD3CA;"></i>
+                                    Đổi giao diện người dùng
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2" style="color: #FBD3CA;"></i>
+                                    Đăng xuất
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                    <div class="main-content">
+                        <div class="section__content section__content--p30">
+                            <div class="container-fluid">
+                                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                    <h1 class="h3 mb-0" style="color: #5d5c78;">Quản lý sản phẩm</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="table-responsive table--no-card m-b-40" style="height: 447px;">
+                                            <table class="table table-borderless table-striped table-earning">
+                                                <thead>
+                                                    <tr>
+                                                        <th>&nbsp;</th>
+                                                        <th>tên sản phẩm</th>
+                                                        <th class="text-right">đơn giá</th>
+                                                        <th class="text-right">đã bán</th>
+                                                        <th class="text-right">tồn kho</th>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>                                                 
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox"/></td>
+                                                        <td>Tẩy mini hình vịt vô tri</td>
+                                                        <td class="text-right">VND 3,000</td>
+                                                        <td class="text-right">2716</td>
+                                                        <td class="text-right">284</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Thước kẻ hình wibu</td>
+                                                        <td class="text-right">VND 15,000</td>
+                                                        <td class="text-right">136</td>
+                                                        <td class="text-right">64</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Hộp bút phát nhạc lofi cực chill</td>
+                                                        <td class="text-right">VND 359,000</td>
+                                                        <td class="text-right">99</td>
+                                                        <td class="text-right">1</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>                                                   
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Bao vở hình mèo mắt lác</td>
+                                                        <td class="text-right">VND 1,200</td>
+                                                        <td class="text-right">4467</td>
+                                                        <td class="text-right">533</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Nhãn vở hình quạ quạu quọ</td>
+                                                        <td class="text-right">VND 500</td>
+                                                        <td class="text-right">2358</td>
+                                                        <td class="text-right">142</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>                                                   
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Sổ còng trang trí bìa bing-chilling</td>
+                                                        <td class="text-right">VND 78,000</td>
+                                                        <td class="text-right">425</td>
+                                                        <td class="text-right">75</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Sổ ghi chú A6 galaxy</td>
+                                                        <td class="text-right">VND 39,000</td>
+                                                        <td class="text-right">76</td>
+                                                        <td class="text-right">24</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Bút vô diện</td>
+                                                        <td class="text-right">VND 12,000</td>
+                                                        <td class="text-right">493</td>
+                                                        <td class="text-right">7</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Bút xanh Thiên Long</td>
+                                                        <td class="text-right">VND 5,000</td>
+                                                        <td class="text-right">3811</td>
+                                                        <td class="text-right">189</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Bút chì ngòi Japan</td>
+                                                        <td class="text-right">VND 48,000</td>
+                                                        <td class="text-right">393</td>
+                                                        <td class="text-right">57</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Bút chì 2B Mỹ</td>
+                                                        <td class="text-right">VND 14,200</td>
+                                                        <td class="text-right">920</td>
+                                                        <td class="text-right">80</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"><input type="checkbox" /></td>
+                                                        <td>Sổ ghi chú A5 họa ký</td>
+                                                        <td class="text-right">VND 81,800</td>
+                                                        <td class="text-right">200</td>
+                                                        <td class="text-right">0</td>
+                                                        <td>
+                                                            <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <a class="au-btn au-btn-load"  href="add-product.html" style="width: 100%; text-align: center;">Thêm sản phẩm</a>
+                                        </div>
+                                        <div style="height: 5px;"></div>
+                                        <div>
+                                            <button class="au-btn au-btn-load" href="#" data-toggle="modal" data-target="#removeModal" style="width: 100%; display: block;">Xóa sản phẩm đã chọn</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h4 class="m-b-25" style="color: #5d5c78;">Danh Mục Sản Phẩm</h4>
+                                        <div class="table-responsive table--no-card m-b-40" style="height: 400px;">
+                                            <table class="table table-borderless table-striped table-earning">
+                                                        <tbody>
+                                                           <tr>
+                                                            <td>Vở</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>   
+                                                           <tr>
+                                                            <td>Sổ</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>   
+                                                           <tr>
+                                                            <td>Dụng cụ học tập</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>  
+                                                           <tr>
+                                                            <td>File</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>
+                                                           <tr>
+                                                            <td>Hộp bút</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>   
+                                                           <tr>
+                                                            <td>Nhãn vở</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>Giấy bao các loại</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>Đồ trang trí</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>Flash Sale</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>  
+                                                           <tr>
+                                                            <td>Top Sale</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>Sản phẩm mới</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr> 
+                                                           <tr>
+                                                            <td>Tồn kho</td>
+                                                            <td>
+                                                                <a href="#" data-toggle="modal" data-target="#removeModal" class="tm-product-delete-link">
+                                                                    <i class="fas fa-trash-alt tm-product-delete-icon"></i>
+                                                                </a>
+                                                            </td>
+                                                           </tr>                                     
+                                                        </tbody>
+                                                </table>
+                                               
+                                        </div>
+                                        <div>
+                                            <button class="au-btn au-btn-load" href="#" data-toggle="modal" data-target="#categoryModal" style="width: 100%; display: block;">Thêm danh mục</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <footer class="sticky-footer" style="background-color: #F7F8F4;">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span style="color: #5d5c78;">&copy 2022 Flashy Stationery. Tất cả quyền được bảo lưu</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bạn có chắc muốn thoát?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #5d5c78;">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Chọn "Đăng xuất" để kết thúc phiên đăng nhập của bạn.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="login.html">Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Logout Modal -->
+     
+    <!-- Remove Modal-->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bạn có chắc muốn xóa?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: #5d5c78;">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Chọn "Xác nhận" để xóa.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="login.html">Xác nhận</a>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- End Remove Modal -->
+
+    <!-- Category Modal -->
+    <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <label for="taskName" style="color: #5d5c78; font-weight: bold;">Nhập Tên Danh Mục Mới</label><br>
+                                <input type="text" class="form-control form-control-user" id="categoryName">
+                            </div>                            
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+                    <a class="btn btn-primary" href="product.html">Thêm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Category Modal -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/admin.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+
+    <!-- Vendor JS       -->
+    <script src="vendor/slick/slick.min.js">
+    </script>
+    <script src="vendor/wow/wow.min.js"></script>
+    <script src="vendor/animsition/animsition.min.js"></script>
+    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="vendor/select2/select2.min.js">
+    </script>
+
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

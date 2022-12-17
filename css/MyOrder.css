@@ -1,0 +1,98 @@
+#my_order_container{
+    padding: 10px 0px 20px 0px;
+    background-color: #F7F8F4;
+}
+#my_orders{
+    background-color: white;
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+#order_id_status{
+    margin: 10px 0px;
+    border-bottom: 1px solid #D3D3D3;
+}
+#order_id{
+    padding: 0px;
+}
+#order_status{
+    background-color: #FBD3CA;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+#my_order_products{
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #D3D3D3;
+}
+#product .row{
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+#product img{
+    width: 100%;
+    height: max-content;
+}
+#product_detail{
+    padding: 0px;
+}
+#product_detail p{
+    margin-bottom: 0px;
+    color: #5D5C78;
+}
+#product_name{
+    font-weight: 500;
+    font-size: 0.9em;
+    text-align: justify;
+}
+#product_type{
+    color: #5D5C7880;
+    font-size: 0.8em;
+}
+#product_price{
+    margin: 0px 15px;
+    padding: 0px 10px;
+    background-color: #FBD3CA;
+    border-radius: 5px;
+}
+#total_cost{
+    margin: 20px 0px 0px;
+    padding: 0px;
+}
+#buttons{
+    margin: 0px;
+    padding: 0px 0px 20px;
+}
+#buttons button{
+    border: none;
+    border-radius: 5px;
+    padding: 2px 20px;
+    color: #5D5C78;
+    font-size: 1.1em;
+}
+#btn_rebuy{
+    margin: 0px 10px;
+}
+#btn_review{
+    background-color: #FBD3CA;
+}
+
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    #my_orders{
+        padding: 10px 15px;
+    }
+    #product{
+        margin: 0px;
+        border-bottom: 1px solid #D3D3D3;
+        padding: 0px 0px;
+    }
+    #my_order_products{
+        border-bottom: none;
+    }
+    #buttons button{
+        padding: 2px 15px;
+        color: #5D5C78;
+        font-size: 1em;
+    }
+}
