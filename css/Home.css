@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
   .MainHome{
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     font-family: 'Quicksand', sans-serif;
     background-color: rgba(247, 248, 244, 1);
 }
@@ -20,6 +17,7 @@
       text-align: center;
       padding-top: 10px;
       color: rgba(216, 189, 193, 1);
+      font-weight: 600;
   }
   .col-sm-3 img{
       background-color: rgb(251, 211, 202, 0.80); 
@@ -36,14 +34,27 @@
   }
   .col-sm-3 img:hover{
       opacity: 0.5;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  }
+  .card:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
   }
   .container h2{
       color: rgba(93, 92, 120, 1);
-      background: white;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
       font-weight: 700;
-      padding: 10px;
   }
+  #heading {
+    color: rgba(93, 92, 120, 1);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #heading button{
+    font-weight: 700;
+  }
+
   .col-md-3 img{
       display: block;
       margin-left: auto;
