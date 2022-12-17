@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Flashy Admin - Add Product</title>
+    <title>Flashy Admin - Edit Product</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -324,7 +324,7 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0" style="color: #5d5c78;">Thêm sản phẩm</h1>
+                            <h1 class="h3 mb-0" style="color: #5d5c78;">Chỉnh sửa sản phẩm</h1>
                         </div>
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-12">
@@ -340,6 +340,7 @@
                                     type="text"
                                     class="form-control"
                                     required
+                                    value="Lorem Ipsum Product"
                                     style="border-radius: 20px;"
                                   />
                                 </div>
@@ -353,7 +354,8 @@
                                     rows="3"
                                     required
                                     style="border-radius: 20px;"
-                                  ></textarea>
+                                  >Lorem ipsum dolor amet gentrify glossier locavore messenger bag chillwave hashtag irony migas wolf kale chips small batch kogi direct trade shaman.</textarea>
+                                </textarea>
                                 </div>
                                 <div class="form-group mb-3">
                                   <label style="color: #5d5c78;"
@@ -374,8 +376,8 @@
                                     <option value="6">Nhãn vở</option>
                                     <option value="7">Giấy bao các loại</option>
                                     <option value="8">Đồ trang trí</option>
-                                    <option value="9">Flash Sale</option>
-                                    <option value="10">Top Sale</option>
+                                    <option selected value="9">Flash Sale</option>
+                                    <option selected value="10">Top Sale</option>
                                     <option value="11">Sản phẩm mới</option>
                                     <option value="12">Tồn kho</option>
                                   </select>
@@ -391,6 +393,7 @@
                                           name="unit_price"
                                           type="text"
                                           class="form-control"
+                                          value="VND 359,000"
                                           data-large-mode="true"
                                           placeholder="VND 0,000"
                                           style="border-radius: 20px;"
@@ -405,6 +408,7 @@
                                           id="stock"
                                           name="stock"
                                           type="text"
+                                          value="1"
                                           class="form-control"
                                           style="border-radius: 20px;"
                                           required
@@ -416,23 +420,22 @@
                             <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
                                 <div style="height: 35px;"></div>
                               <div class="tm-product-img-dummy mx-auto">
-                                <i
-                                  class="fas fa-cloud-upload-alt tm-upload-icon"
-                                  onclick="document.getElementById('fileInput').click();"
-                                ></i>
+                                <img src="images/upload-sample.png" alt="Hình sản phẩm" class="img-fluid d-block mx-auto" 
+                                style="height: 100%; width: auto; object-fit: contain; border-radius: 10px;"
+                                onclick="document.getElementById('fileInput').click();">
                               </div>
                               <div class="custom-file mt-3 mb-3">
                                 <input id="fileInput" type="file" style="display:none;" />
                                 <input
                                   type="button"
                                   class="btn btn-primary btn-block mx-auto"
-                                  value="TẢI LÊN HÌNH ẢNH"
+                                  value="CẬP NHẬT HÌNH ẢNH"
                                   onclick="document.getElementById('fileInput').click();"
                                 />
                               </div>
                             </div>
                             <div class="col-12">
-                              <a class="au-btn au-btn-load"  href="product.html" style="width: 100%; text-align: center;">Thêm sản phẩm mới</a>
+                                <a class="au-btn au-btn-load"  href="product.html" style="width: 100%; text-align: center;">Cập nhật sản phẩm</a>
                             </div>
                           </form>
                           </div>
@@ -480,9 +483,8 @@
             </div>
         </div>
     </div>
-    <!-- End Logout Modal -->  
-   
-
+    <!-- End Logout Modal -->
+     
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

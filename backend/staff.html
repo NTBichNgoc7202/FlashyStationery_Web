@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Flashy Admin - Add Product</title>
+    <title>Flashy Admin - Staff</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@
                     <span>Dashboard</span></a>
             </li>
             <!-- Nav Item - Products -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="product.html">
                     <i class="fas fa-shopping-cart"></i>
                     <span>Quản lý sản phẩm</span></a>
@@ -99,7 +99,7 @@
             </li>
 
             <!-- Nav Item - Staff -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="staff.html">
                     <i class="fas fa-user"></i>
                     <span>Nhân viên</span></a>
@@ -324,118 +324,197 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                            <h1 class="h3 mb-0" style="color: #5d5c78;">Thêm sản phẩm</h1>
-                        </div>
+                            <h1 class="h3 mb-0" style="color: #5d5c78;">Nhân viên</h1>
+                        </div>                        
+                    </div>
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-12">
-                              <form action="" class="tm-edit-product-form">
-                                <div class="form-group mb-3">
-                                  <label style="color: #5d5c78;"
-                                    for="name"
-                                    >Tên sản phẩm
-                                  </label>
-                                  <input
-                                    id="name"
-                                    name="name"
-                                    type="text"
-                                    class="form-control"
-                                    required
-                                    style="border-radius: 20px;"
-                                  />
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="row">
+                                            <img class="img-profile rounded-circle col-lg-3"
+                                            src="images/avatar1.jpg" style="height: 100%; width: 100%;">
+                                            <div class="col-lg-9">
+                                                <h3 class="text-primary">Nguyễn Trần Bích Ngọc</h3>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-phone text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-envelope text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">ngocntb20411c@st.uel.edu.vn</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-user text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">Nhóm trưởng</i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="form-group mb-3">
-                                  <label style="color: #5d5c78;"
-                                    for="description"
-                                    >Mô tả</label
-                                  >
-                                  <textarea
-                                    class="form-control"
-                                    rows="3"
-                                    required
-                                    style="border-radius: 20px;"
-                                  ></textarea>
-                                </div>
-                                <div class="form-group mb-3">
-                                  <label style="color: #5d5c78;"
-                                    for="category"
-                                    >Danh mục sản phẩm</label
-                                  >
-                                  <select
-                                    class="custom-select mr-1 multiselect-dropdown"
-                                    id="category" multiple onchange="console.log(Array.from(this.selectedOptions).map(x=>x.value??x.text))"
-                                    multiselect-hide-x="true" multiselect-search="true" 
-                                    multiselect-select-all="true" style="position: fixed;"
-                                  >
-                                    <option value="1">Vở</option>
-                                    <option value="2">Sổ</option>
-                                    <option value="3">Dụng cụ học tập</option>
-                                    <option value="4">File</option>
-                                    <option value="5">Hộp bút</option>
-                                    <option value="6">Nhãn vở</option>
-                                    <option value="7">Giấy bao các loại</option>
-                                    <option value="8">Đồ trang trí</option>
-                                    <option value="9">Flash Sale</option>
-                                    <option value="10">Top Sale</option>
-                                    <option value="11">Sản phẩm mới</option>
-                                    <option value="12">Tồn kho</option>
-                                  </select>
-                                </div>
-                                <div class="row">
-                                    <div class="form-group mb-3 col-xs-12 col-sm-6">
-                                        <label style="color: #5d5c78;"
-                                          for="unit_price"
-                                          >Đơn giá
-                                        </label>
-                                        <input
-                                          id="unit_price"
-                                          name="unit_price"
-                                          type="text"
-                                          class="form-control"
-                                          data-large-mode="true"
-                                          placeholder="VND 0,000"
-                                          style="border-radius: 20px;"
-                                        />
-                                      </div>
-                                      <div class="form-group mb-3 col-xs-12 col-sm-6">
-                                        <label style="color: #5d5c78;"
-                                          for="stock"
-                                          >Tồn kho
-                                        </label>
-                                        <input
-                                          id="stock"
-                                          name="stock"
-                                          type="text"
-                                          class="form-control"
-                                          style="border-radius: 20px;"
-                                          required
-                                        />
-                                      </div>
-                                </div>
-                                
                             </div>
-                            <div class="col-xl-6 col-lg-6 col-md-12 mx-auto mb-4">
-                                <div style="height: 35px;"></div>
-                              <div class="tm-product-img-dummy mx-auto">
-                                <i
-                                  class="fas fa-cloud-upload-alt tm-upload-icon"
-                                  onclick="document.getElementById('fileInput').click();"
-                                ></i>
-                              </div>
-                              <div class="custom-file mt-3 mb-3">
-                                <input id="fileInput" type="file" style="display:none;" />
-                                <input
-                                  type="button"
-                                  class="btn btn-primary btn-block mx-auto"
-                                  value="TẢI LÊN HÌNH ẢNH"
-                                  onclick="document.getElementById('fileInput').click();"
-                                />
-                              </div>
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="au-card-inner">
+                                            <div class="row">
+                                                <img class="img-profile rounded-circle col-lg-3"
+                                                src="images/ava-my.jpg" style="height: 100%; width: 100%;">
+                                                <div class="col-lg-9">
+                                                    <h3 class="text-primary">Lê Thị Trà My</h3>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-phone text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-envelope text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">myltt20411c@st.uel.edu.vn</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-user text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">Thành viên</i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12">
-                              <a class="au-btn au-btn-load"  href="product.html" style="width: 100%; text-align: center;">Thêm sản phẩm mới</a>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="row">
+                                            <img class="img-profile rounded-circle col-lg-3"
+                                            src="images/avatar4.jpg" style="height: 100%; width: 100%;">
+                                            <div class="col-lg-9">
+                                                <h3 class="text-primary">Trương Đỗ Đăng Khoa</h3>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-phone text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-envelope text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">khoatdd20411c@st.uel.edu.vn</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-user text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">Thành viên</i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                          </form>
-                          </div>
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="au-card-inner">
+                                            <div class="row">
+                                                <img class="img-profile rounded-circle col-lg-3"
+                                                src="images/ava-trinh.jpg" style="height: 100%; width: 100%;">
+                                                <div class="col-lg-9">
+                                                    <h3 class="text-primary">Võ Thị Ngọc Trinh</h3>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-phone text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-envelope text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">trinhvtn20411c@st.uel.edu.vn</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-user text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">Thành viên</i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="row">
+                                            <img class="img-profile rounded-circle col-lg-3"
+                                            src="images/ava-phuc.jpg" style="height: 100%; width: 100%;">
+                                            <div class="col-lg-9">
+                                                <h3 class="text-primary">Tô Hoài Phúc</h3>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-phone text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-envelope text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">phucth20411c@st.uel.edu.vn</i>
+                                                </p>
+                                                <p style="font-size: 18px;">
+                                                    <i class="fas fa-user text-primary"></i>
+                                                    <i style="color: black; font-style: normal; font-weight: lighter;">Thành viên</i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card">
+                                    <div class="au-card-inner">
+                                        <div class="au-card-inner">
+                                            <div class="row">
+                                                <img class="img-profile rounded-circle col-lg-3"
+                                                src="images/ava-tam.jpg" style="height: 100%; width: 100%;">
+                                                <div class="col-lg-9">
+                                                    <h3 class="text-primary">Đỗ Thị Minh Tâm</h3>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-phone text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">0909090909</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-envelope text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">tamdtm20411c@st.uel.edu.vn</i>
+                                                    </p>
+                                                    <p style="font-size: 18px;">
+                                                        <i class="fas fa-user text-primary"></i>
+                                                        <i style="color: black; font-style: normal; font-weight: lighter;">Thành viên</i>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <p style="color: black; font-size: 18px; font-weight: lighter;">
+                                                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
