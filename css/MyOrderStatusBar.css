@@ -1,0 +1,42 @@
+#my_order_status_bar{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+#my_order_status_bar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 5px 10px;
+    border-bottom: 2px solid #D3D3D3;
+}
+#my_order_status_bar ul li{
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+#my_order_status_bar ul li a{
+    text-decoration: none;
+    color: #D8BDC1;
+    padding: 5px 10px;
+    margin: 0px;
+}
+#my_order_status_bar ul li a:hover{
+    color: #5D5C78;
+}
+#my_order_status_bar ul li a.active{
+    border-bottom: 2px solid #5D5C78;
+    color: #5D5C78;
+    font-weight: 500;
+}
+
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    #my_order_status_bar ul li a.active{
+        border-bottom: none;
+        color: #5D5C78;
+    }
+    #my_order_status_bar{
+        margin-top: 15px;
+    }
+}

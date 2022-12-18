@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+  .MainHome{
+    margin: 0 ;
+    padding: 0 ;
+    background-color: rgba(247, 248, 244, 1);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+  
+  .item{
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+  }
+  
+  .col-sm-3 h5{
+      text-align: center;
+      padding-top: 10px;
+      color: rgba(216, 189, 193, 1);
+      font-weight: 600;
+  }
+  .col-sm-3 img{
+      background-color: rgb(251, 211, 202, 0.80); 
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+      border-radius: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+  }
+  .col-sm-3 h5:hover{
+      color: #5D5C78;
+      opacity: 0.7;
+  }
+  .col-sm-3 img:hover{
+      opacity: 0.5;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  }
+  .card:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  }
+  .container h2{
+      color: rgba(93, 92, 120, 1);
+      font-weight: 700;
+  }
+  #heading {
+    color: rgba(93, 92, 120, 1);
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #heading button{
+    font-weight: 700;
+  }
+
+  .col-md-3 img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding: 10px;
+  }
+  .star{
+      margin-top: -10px;
+  }
+  .checked {
+      color: orange;
+  }
+  .des{
+      text-align: center;
+      padding: 20px;
+  }
+  .sold{
+      background: #D8BDC1;
+      border-radius: 20px;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+  }
+  .card-body h6{
+      color: #5D5C78;
+      background: #D8BDC1;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+      height: 30px;
+  }
+  .card-body h6:hover{
+      opacity: 0.7;
+  }
+  .d-grid .btn{
+      color: #5D5C78;
+      background-color: #D8BDC1;
+      border-radius: 20px;
+      text-align: center;
+      font-weight: 700;
+  }
+  .card-body{
+      text-align: center;
+      height: max-content;
+  }
+  .card-price{
+      margin-top: -10px;
+  }
+  .card-img-top{
+      background: rgba(211, 211, 211, 0.4);
+  }
+  .card-img-top:hover{
+      opacity: 0.5;
+  }
+
+  
+  

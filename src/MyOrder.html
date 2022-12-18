@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Đơn hàng của tôi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="/css/MyOrder.css" rel="stylesheet">
+        <link href="/css/UserProfileMenu.css" rel="stylesheet">
+        <link href="/css/MyOrderStatusBar.css" rel="stylesheet">
+
+        <!-- Gắn Header, Footer -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+        <!-- Dùng Bootstrap -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <div class="Header" w3-include-html="Header.html"></div>
+        
+        <div id="my_order_container">
+            <div class="container">
+                <div class="row">
+                    <div id="user_profile_menu" class="col-md-3 col-12">
+                        <ul>
+                            <li id="menu_title"><h5>Tài khoản</h5></li>
+                            <li><a href="UserProfile.html">Thông tin tài khoản</a></li>
+                            <li><a href="MyOrder.html" class="active">Đơn hàng của tôi</a></li>
+                            <li><a href="AddressBook.html">Sổ địa chỉ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-9 col-12">
+                        <div id="my_order_status_bar">
+                            <ul>
+                                <li><a href="" class="active">Tất cả</a></li>
+                                <li><a href="">Chờ xác nhận</a></li>
+                                <li><a href="">Chờ lấy hàng</a></li>
+                                <li><a href="">Đang giao</a></li>
+                                <li><a href="">Hoàn thành</a></li>
+                                <li><a href="">Đã huỷ</a></li>
+                                <li><a href="">Trả hàng/Hoàn tiền</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="my_orders" class="container">
+                            <div id="order_id_status" class="row justify-content-between">
+                                <p id="order_id" class="col-auto">Mã đơn hàng: 22121012345</p>
+                                <p id="order_status" class="col-auto">Hoàn thành</p>
+                            </div>
+                            <div>
+                                <div id="my_order_products" class="row">
+                                    <div id="product" class="col-md-6 col-12">
+                                        <div class="row">
+                                            <img class="col-4" src="/images/SoCongLoxo.png">
+                                            <div id="product_detail" class="col-8">
+                                                <p id="product_name" class="col-12">Sổ Binder File Caro B5 còng sắt 26 chấu 80 tờ</p>
+                                                <p id="product_type" class="col-12">Phân loại: màu tím</p>
+                                                <div class="row justify-content-between">
+                                                    <p id="product_quantity" class="col-auto">x1</p>
+                                                    <p id="product_price" class="col-auto">78.000đ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="product" class="col-md-6 col-12">
+                                        <div class="row">
+                                            <img class="col-4" src="/images/SoCaro.png">
+                                            <div id="product_detail" class="col-8">
+                                                <p id="product_name" class="col-12">Sổ lò xo kép Caro 200 trang B5 giấy dày chống lem</p>
+                                                <p id="product_type" class="col-12">Phân loại: màu vàng</p>
+                                                <div class="row justify-content-between">
+                                                    <p id="product_quantity" class="col-auto">x2</p>
+                                                    <p id="product_price" class="col-auto">90.000đ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="total_cost" class="row justify-content-end">
+                                    <p style="padding-right: 5px;">Thành tiền:</p>
+                                    <h5>190.000đ</h5>
+                                </div>
+                                <div id="buttons" class="row justify-content-end">
+                                    <button type="button" id="btn_contact">Liên hệ</button>
+                                    <button type="button" id="btn_rebuy">Mua lại</button>
+                                    <button type="button" id="btn_review">Đánh giá</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Footer" w3-include-html="Footer.html"></div>
+        <script>
+            w3.includeHTML();
+        </script>
+
+    </body>
+</html>
