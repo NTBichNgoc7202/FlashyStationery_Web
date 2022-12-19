@@ -488,14 +488,18 @@ h2 {
     .reply-info.container.row.col-md-6{
         text-align: left;
     }
+    #boder-rating{
+        padding: 20px;
+    }
 }
+
 
 /** Responsive Tablet **/
 @media  (min-width: 520px ) and (max-width: 1080px) {
    #product-detail-container{
     display: block;
     height: auto;
-    padding: 0px;
+    padding: 20px;
    }
     
 }
