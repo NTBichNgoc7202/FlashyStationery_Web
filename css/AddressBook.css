@@ -1,4 +1,26 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 #address_book_container{
     background-color: #F7F8F4;
     padding: 10px 0px 20px;
+}
+#address_list{
+    background-color: white;
+    padding: 15px;
+}
+#address_list:first-child{
+    border-bottom: 2px solid #D3D3D3;
+}
+#btn_add_address{
+    margin-right: 15px;
+    padding: 8px 20px;
+    background-color: #FBD3CA;
+    border: none;
+    border-radius: 5px;
+}
+#btn_add_address a{
+    text-decoration: none;
+    color: #5D5C78;
+    font-weight: 500;
 }
