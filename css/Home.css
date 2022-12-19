@@ -15,13 +15,13 @@
     border-radius: 20px;
   }
   
-  .col-sm-3 h5{
+  .col-3 h5{
       text-align: center;
       padding-top: 10px;
       color: rgba(216, 189, 193, 1);
       font-weight: 600;
   }
-  .col-sm-3 img{
+  .col-3 img{
       background-color: rgb(251, 211, 202, 0.80); 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
       border-radius: 10px;
@@ -30,11 +30,11 @@
       margin-right: auto;
       width: 40%;
   }
-  .col-sm-3 h5:hover{
+  .col-3 h5:hover{
       color: #5D5C78;
       opacity: 0.7;
   }
-  .col-sm-3 img:hover{
+  .col-3 img:hover{
       opacity: 0.5;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
   }
@@ -57,7 +57,7 @@
     font-weight: 700;
   }
 
-  .col-md-3 img{
+  .col-sm-3 img{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -74,26 +74,7 @@
       text-align: center;
       padding: 20px;
   }
-  .sold{
-      background: #D8BDC1;
-      border-radius: 20px;
-      text-align: center;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 20px;
-  }
-  .card-body h6{
-      color: #5D5C78;
-      background: #D8BDC1;
-      border-radius: 10px;
-      font-size: 16px;
-      text-align: center;
-      height: 30px;
-  }
-  .card-body h6:hover{
-      opacity: 0.7;
-  }
+ 
   .d-grid .btn{
       color: #5D5C78;
       background-color: #D8BDC1;
@@ -105,8 +86,12 @@
       text-align: center;
       height: max-content;
   }
+  .card-title{
+    font-weight: 500;
+  }
   .card-price{
-      margin-top: -10px;
+    margin-top: -10px;
+    font-weight: 500;
   }
   .card-img-top{
       background: rgba(211, 211, 211, 0.4);
@@ -114,6 +99,51 @@
   .card-img-top:hover{
       opacity: 0.5;
   }
+
+
+  /* Màn hình điện thoại */
+@media (max-width: 767px) {
+    .col-3 h5{
+        font-size: 0.7em;
+    }
+    .col-3 img{
+      border-radius: 5px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+    .container h2{
+        color: rgba(93, 92, 120, 1);
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+    #heading button{
+        font-weight: 700;
+        font-size: 0.5em;
+      }
+    .d-grid .btn{
+        font-size: 0.5em;
+    }
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-title{
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+    .card-price{
+      margin-top: -10px;
+      font-weight: 500;
+      font-size: 1.1em;
+    }
+}
   
 
 
