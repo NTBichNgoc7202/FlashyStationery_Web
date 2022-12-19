@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="" rel="stylesheet">
         <link href="/css/UserProfileMenu.css" rel="stylesheet">
+        <link href="/css/AddressBook.css" rel="stylesheet">
 
         <!-- Gắn Header, Footer -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -20,16 +21,28 @@
     <body>
         <div class="Header" w3-include-html="Header.html"></div>
         
-        <div id="">
+        <div id="address_book_container">
             <div class="container">
                 <div class="row">
                     <div id="user_profile_menu" class="col-md-3 col-12">
                         <ul>
                             <li id="menu_title"><h5>Tài khoản</h5></li>
                             <li><a href="UserProfile.html">Thông tin tài khoản</a></li>
-                            <li><a href="MyOrder.html" class="active">Đơn hàng của tôi</a></li>
-                            <li><a href="AddressBook.html">Sổ địa chỉ</a></li>
+                            <li><a href="MyOrder.html">Đơn hàng của tôi</a></li>
+                            <li><a href="AddressBook.html" class="active">Sổ địa chỉ</a></li>
                         </ul>
+                    </div>
+
+                    <!-- Danh sách địa chỉ -->
+                    <div class="col-md-9 col-12">
+                        <div id="address_list">
+                            <table>
+                                <tr>
+                                    <th>Họ tên</th>
+                                    <th></th>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
