@@ -14802,3 +14802,11 @@ input[type="checkbox"]:focus {
   }
   .multiselect-dropdown span.maxselected {width:100%;}
   .multiselect-dropdown-all-selector {border-bottom:solid 1px #999;}
+
+  #copyright{
+    width: 100%;
+    margin: 20px 0px 0px;
+    padding: 10px 0px;
+    text-align: center;
+    color: #5D5C78;
+}
