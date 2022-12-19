@@ -1,6 +1,6 @@
-body{
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
 }
 .menu{
     margin: 0px;
@@ -8,13 +8,13 @@ body{
     background-color: #D8BDC1;
 }
 .menu nav{
-    margin: 2px 0px;
+    margin: 4px 0px;
     padding: 0px 15px;
 }
 .menu a{
     color: #5D5C78;
-    font-weight: 500;
     margin-right: 20px;
+    font-weight: bold;
 }
 .menu a:hover{
     color: #F7F8F4;
