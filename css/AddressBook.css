@@ -1,5 +1,7 @@
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 #address_book_container{
     background-color: #F7F8F4;
@@ -9,13 +11,16 @@ body{
     background-color: white;
     padding: 15px;
 }
-#address_list:first-child{
+#my_address{
     border-bottom: 2px solid #D3D3D3;
-    padding: 15px 15px 10px;
+    padding: 5px 0px 15px;
+}
+#address_list h5{
+    font-weight: 600;
 }
 #btn_add_address{
     margin-right: 15px;
-    padding: 8px 20px;
+    padding: 5px 15px;
     background-color: #FBD3CA;
     border: none;
     border-radius: 5px;
@@ -23,5 +28,51 @@ body{
 #btn_add_address a{
     text-decoration: none;
     color: #5D5C78;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+/* Danh sách địa chỉ */
+#address_info{
+    padding: 5px 0px 20px;
+    margin: 15px 0px;
+    border-bottom: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+#address_info p{
+    margin: 0px;
+    padding: 0px;
+    color: #5D5C78BF;
+}
+#address_info a{
+    margin: 0px;
+    padding: 0px;
+    color: #D8BDC1;
+}
+#address_info #name{
+    color: #5D5C78;
+    font-weight: 700;
+}
+#btn_edit, #btn_delete{
+    background: none;
+    padding: 0px;
+    border: none;
+    margin-left: 15px;
+    color: #D8BDC1;
+}
+#btn_edit:hover, #btn_delete:hover{
+    text-decoration: underline;
+}
+
+
+/* Màn hình điện thoại */
+@media (max-width: 767px) {
+    #address_list{
+        margin-top: 10px;
+    }
+    #my_address h5{
+        font-size: 1.2em;
+    }
+    #btn_add_address a, #address_info p, #btn_edit, #btn_delete{
+        font-size: 0.9em;
+    }
 }

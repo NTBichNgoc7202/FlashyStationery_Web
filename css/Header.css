@@ -1,7 +1,6 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
 }
 .header{
     margin: 0px;
@@ -35,6 +34,9 @@ body{
     outline: none;
     border-radius: 0px 5px 5px 0px;
     background-color: #FBD3CA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn_search img{
     max-height: 80%;
@@ -62,7 +64,9 @@ body{
 .header_user p{
     color: white;
     float: right;
+    display: flex;
     margin-left: 5px;
+    font-weight: 500;
 }
 .header_user ul {
     position: absolute;

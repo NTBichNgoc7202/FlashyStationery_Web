@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+}
 .information{
     margin: 0px;
     padding: 30px 0px;
     height: max-content;
     background-color: #F7F8F4;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 #info_title{
-    font-family: 'Times New Roman', Times, serif;
     color: #5D5C78;
     display: flex;
     justify-content: center;
@@ -24,9 +28,7 @@
     width: 100%;
     height: min-content;
 }
-#intro_desc{
-    text-align: justify;
-}
+
 
 /* Các giá trị */
 #values{
@@ -35,11 +37,8 @@
 #values h4{
     text-align: center;
     color: #5D5C78;
-    font-family: 'Times New Roman', Times, serif;
 }
 #values p{
-    text-align: justify;
-    font-size: 0.9em;
     margin-bottom: 10px;
 }
 
@@ -53,6 +52,7 @@
 #policy_info h5 a{
     text-decoration: none;
     color: #5D5C78;
+    font-weight: 600;
 }
 #policy_info ol li{
     color: #5D5C78;
@@ -62,7 +62,7 @@
 }
 #policy_info ol li a{
     text-decoration: none;
-    color: #5D5C78;
+    color: black;
 }
 #policy_info a:hover, #policy_info li:hover{
     color: #D8BDC1;

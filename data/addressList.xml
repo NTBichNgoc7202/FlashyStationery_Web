@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addresses>
+    <address>
+        <fullName>Nguyễn Trần Bích Ngọc</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>Trường Đại học Kinh tế Luật</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Xuân</ward>
+    </address>
+    <address>
+        <fullName>Lê Thị Trà My</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>KTX khu B</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Trung</ward>
+    </address>
+    <address>
+        <fullName>Trương Đỗ Đăng Khoa</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>KTX khu B</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Trung</ward>
+    </address>
+    <address>
+        <fullName>Võ Thị Ngọc Trinh</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>KTX khu B</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Trung</ward>
+    </address>
+    <address>
+        <fullName>Đỗ Minh Tâm</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>KTX khu B</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Trung</ward>
+    </address>
+    <address>
+        <fullName>Tô Hoài Phúc</fullName>
+        <phoneNumb>0987654321</phoneNumb>
+        <addressDetail>KTX khu B</addressDetail>
+        <province>TP.Hồ Chí Minh</province>
+        <district>Thành phố Thủ Đức</district>
+        <ward>Phường Linh Trung</ward>
+    </address>
+</addresses>

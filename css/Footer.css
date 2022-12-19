@@ -1,7 +1,7 @@
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 .footer{
     margin: 0px;
@@ -13,6 +13,7 @@ body{
     margin: 0px 0px 5px 0px;
     padding: 0px;
     color: #5D5C78;
+    font-weight: bold;
 }
 .footer ul{
     margin: 0px;

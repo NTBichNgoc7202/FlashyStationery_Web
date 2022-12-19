@@ -26,7 +26,7 @@
                 <div class="row">
                     <div id="user_profile_menu" class="col-md-3 col-12">
                         <ul>
-                            <li id="menu_title"><h5>Tài khoản</h5></li>
+                            <li id="menu_title"><h4>Tài khoản</h4></li>
                             <li><a href="UserProfile.html">Thông tin tài khoản</a></li>
                             <li><a href="MyOrder.html">Đơn hàng của tôi</a></li>
                             <li><a href="AddressBook.html" class="active">Sổ địa chỉ</a></li>
@@ -36,10 +36,13 @@
                     <!-- Danh sách địa chỉ -->
                     <div class="col-md-9 col-12">
                         <div id="address_list" class="container">
-                            <div class="row justify-content-between align-items-center">
+                            <div id="my_address" class="row justify-content-between align-items-center">
                                 <h5 class="col-auto">Địa chỉ của tôi</h5>
                                 <button id="btn_add_address" class="col-auto" type="button"><a href="">+ Thêm địa chỉ mới</a></button>
                             </div>
+                        
+                            <div id="my_address_list"></div>
+
                         </div>
                     </div>
                 </div>
@@ -47,6 +50,49 @@
         </div>
 
         <div class="Footer" w3-include-html="Footer.html"></div>
+
+        <!-- Load address -->
+        <script>
+            var xhttp = new XMLHttpRequest();
+            var url = "../data/addressList.xml";
+            xhttp.open('GET', url, false);
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    updatePage(this);
+                } else {
+                    alert("Không lấy được dữ liệu")
+                }
+            }
+            xhttp.send();
+
+            function updatePage(xhttp){
+                var addressInfo = "";
+                var xmlDoc = xhttp.responseXML;
+                var addresses = xmlDoc.getElementsByTagName("address");
+                for (i=0; i<addresses.length; i++){
+                    addressInfo += "<div id='address_info' class='row'><div class='container'><div class='row justify-content-between'>"
+                        + "<div class='col-auto row'><p id='name' class='col-auto'>"
+                        + addresses[i].getElementsByTagName("fullName")[0].childNodes[0].nodeValue 
+                        + "</p><p style='margin: 0px 5px;'> | </p><p id='phone' class='col-auto'>"
+                        + addresses[i].getElementsByTagName("phoneNumb")[0].childNodes[0].nodeValue
+                        + "</p></div><div class='col-auto row'>"
+                        + "<button type='button' id='btn_edit'><a href='' class='col-auto'>Chỉnh sửa</a></button>"
+                        + "<button type='button' id='btn_delete' class='col-auto'>Xoá</button>"
+                        + "</div><p id='address_detail' class='col-12'>"
+                        + addresses[i].getElementsByTagName("addressDetail")[0].childNodes[0].nodeValue
+                        + "</p><p id='adress' class='col-12'>"
+                        + addresses[i].getElementsByTagName("ward")[0].childNodes[0].nodeValue + ", "
+                        + addresses[i].getElementsByTagName("district")[0].childNodes[0].nodeValue + ", "
+                        + addresses[i].getElementsByTagName("province")[0].childNodes[0].nodeValue
+                        + "</p></div></div></div>";                    
+                }
+                
+                document.getElementById("my_address_list").innerHTML = addressInfo;
+            }
+
+        </script>
+
         <script>
             w3.includeHTML();
         </script>
