@@ -18,6 +18,11 @@
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- Gan ChatBox -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+        <link rel="stylesheet" href="/css/ChatBox.css">
+
+
     </head>
     <body>
         <!-- HEADER-->
@@ -29,7 +34,7 @@
             <div class="single-product">
                 <!--IMAGE - CONTENT-->
                 <div class="row" id="product-detail-row">
-                    <div class="col-6" id="product-gallery">
+                    <div class="col-md-6 col-12" id="product-gallery">
                         <div class="product-gallery">
                             <div class="product-picture-big">
                                 <img id="product-picture-big-img" src="/images/plan_notebook_pic1.png" alt="" >
@@ -39,12 +44,11 @@
                                 <img src="/images/plan_notebook_pink.png" alt="" class="img-list">
                                 <img src="/images/plan_notebook_blue.png" alt="" class="img-list">
                                 <img src="/images/plan_notebook_inside.png" alt="" class="img-list">
-                                <img src="/images/plan_notebook_inside2.png" alt="" class="img-list">
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-6" id="product-content">
+                    <div class="col-md-6 col-12" id="product-content">
                         <div id="breadcrumb" class="col-8">
                             <span><a href="/src/Home.html">Flashy</a></span>
                             <span><a href="#">Sổ</a></span>
@@ -144,11 +148,11 @@
 
         <!--ĐÁNH GIÁ-->
         
-
+        <!-- RATING -->
         <div class="product-rating">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" id="boder-rating">
                         <h2>KHÁCH HÀNG ĐÁNH GIÁ</h2>
                         <div class="product-rating-overview">                            
                             <div class="d-flex">
@@ -161,26 +165,26 @@
                                     <span><i class="bx bxs-star"></i></span>
                                     <span><i class="bx bxs-star"></i></span>  
                                 </div>
-                                <div class="flex-grow-1">
-                                  <div class="row align-items-center">
-                                    <div class="col-3 text-right">
+                                <div class="flex-grow-1" >
+                                  <div style="align-self: flex-start;" class="row align-items-center">
+                                    <div class="col-md-1 col-sm-3 col-3 text-right">
                                         <div>
                                             5 <span><i class="bx bxs-star"></i></span>
                                         </div>                                        
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-md-11 col-sm-9 col-9">
                                       <div class="progress" >
                                         <div class="progress-bar" role="progressbar"  style="width: 100%; background-color: #ffc600 ;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                       </div>
                                     </div>
-                                    </div>  
+                                  </div>  
                                     <div class="row align-items-center">
-                                        <div class="col-3 text-right">
+                                        <div class="col-md-1 col-sm-3 col-3 text-right">
                                             <div>
                                               4 <span><i class="bx bxs-star"></i></span>                                               
                                             </div>                                        
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-md-11 col-sm-9 col-9">
                                           <div class="progress" >
                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
@@ -188,12 +192,12 @@
                                     </div>
 
                                     <div class="row align-items-center">
-                                        <div class="col-3 text-right">
+                                        <div class="col-md-1 col-sm-3 col-3 text-right">
                                             <div>
                                                3 <span><i class="bx bxs-star"></i></span>                                                
                                             </div>                                        
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-md-11 col-sm-9 col-9">
                                           <div class="progress" >
                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
@@ -201,12 +205,12 @@
                                     </div>
 
                                     <div class="row align-items-center">
-                                        <div class="col-3 text-right">
+                                        <div class="col-md-1 col-sm-3 col-3 text-right">
                                             <div>
                                                2 <span><i class="bx bxs-star"></i></span>
                                             </div>                                        
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-md-11 col-sm-9 col-9">
                                           <div class="progress" >
                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
@@ -214,12 +218,12 @@
                                     </div>
 
                                     <div class="row align-items-center">
-                                        <div class="col-3 text-right">
+                                        <div class="col-md-1 col-sm-3 col-3 text-right">
                                             <div>
                                                1 <span><i class="bx bxs-star"></i></span>
                                             </div>                                        
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-md-11 col-sm-9 col-9">
                                           <div class="progress" >
                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
@@ -227,12 +231,12 @@
                                     </div>
 
                                     <div class="row align-items-center">
-                                        <div class="col-3 text-right">
+                                        <div class="col-md-1 col-sm-3 col-3 text-right">
                                             <div>
                                                0 <span><i class="bx bxs-star"></i></span>
                                             </div>                                        
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-md-11 col-sm-9 col-9">
                                           <div class="progress" >
                                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                           </div>
@@ -245,6 +249,52 @@
                     </div>
                 </div>  
             </div>    
+
+        <!--Review-->
+        <div class="container" id="product-review">
+          <div class="row" id="review-account">
+            <div  class="col-md-1 col-1" id="review-avatar">
+              <img src="/images/avatar.jpg">
+            </div>
+            <div class="col-md-11 col-10" id="review-account-info">
+              <span>NTB***c</span><br>
+              <span><i class="bx bxs-star"></i></span>
+              <span><i class="bx bxs-star"></i></span>
+              <span><i class="bx bxs-star"></i></span>
+              <span><i class="bx bxs-star"></i></span>
+              <span><i class="bx bxs-star"></i></span><br>
+              <span>Phân loại: Hồng, 120 trang</span>
+            </div>
+          </div>
+          <div class="review-content">Sổ xịn lắm luôn nha, giấy rất thơm. Bìa sổ với lò xo rất chắc chắn. Màu bìa quá trời xinh luôn. Giao hàng cũng nhanh, shop tư vấn nhiệt tình lắm. Sẽ quay lại mua lần hai</div>
+          <div class="review-time"> 11:45 PM, 12/09/2022</div>
+        </div>
+
+        <!--Reply review-->
+        
+        
+          <div class="container">
+            <div class="row">
+              <div class="col-11 offset-1">
+                <div class="reply-review">
+                  <div class="reply-info">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6" style="font-weight: bolder;">Phản hồi của Flashy</div>
+                        <div style="text-align: right" class="col-md-6">5:33 PM, 13/09/2022</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reply-content">
+                    Cảm ơn lời đánh giá của bạn rất nhiều. Đây chính xác là món quà vô giá đối với Flashy. Flashy sẽ không ngừng cải thiện chất lượng để mang lại cho mọi người những dịch vụ tốt nhất!
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
         
         <!-- Goi y san pham  -->
         <div class="container mt-5">
@@ -260,7 +310,7 @@
             </div> 
             <div class="container" style="background-color: white; padding: 10px;">
                   <div id="list-recomend-product"  class="row">
-                      <div  class="item col-md-3">
+                      <div  class="item col-md-4">
                           <div class="card" style="width:300px">
                             <img class="card-img-top" src="/images/Products_RemovedBackground/notebook/planneritem.png" alt="Card image" style="width:100%">
                             <div class="card-body">
@@ -280,7 +330,7 @@
                           
                           </div> 
                       </div>
-                      <div class="item col-md-3">
+                      <div class="item col-md-4">
                           <div class="card" style="width:300px">
                             <img class="card-img-top" src="/images/Products_RemovedBackground/notebook/socongbianhua.png" alt="Card image" style="width:100%">
                             <div class="card-body">
@@ -301,7 +351,7 @@
                           </div> 
           
                       </div>
-                      <div class="item col-md-3">
+                      <div class="item col-md-4">
                           <div class="card" style="width:300px">
                             <img class="card-img-top" src="/images/Products_RemovedBackground/notebook/soloxokepdot200tr.png" alt="Card image" style="width:100%">
                             <div class="card-body">
@@ -326,12 +376,45 @@
                       </div>
                  </div>
             </div>
+
+        <!-- Start ChatBox -->
+        <section>
+          <button class="chat-btn" onclick="openChat()"><i class="material-icons" > comment </i>Chat với Flashy</button>
+          <div class="chat-popup" id="myChat">
+            <div class="badge"><button type="button" class="btn cancel btn-danger" onclick="closeChat()"><i class="fa fa-times"></i></button></div>
+           
+              <div class="chat-area">
+               <div class="income-msg">
+                   <img src="/images/circleilogoflashy.png" width="100%" class="avatar" alt="">
+                   <span class="msg"> Xin chào! Flashy Stationery có thể giúp gì cho bạn? Hãy để lại lời nhắn nhé.</span>
+               </div>   
+              </div>
+              <div class="input-area">
+                  <input id="input-msg" type="text" placeholder="Soạn tin nhắn...">
+                  <button id="emoji-btn"> &#128525;</button>
+                  <button class="submit"> <i class="material-icons"> send</i></button>
+              </div>
+          </div>
+        </section>
+        <!-- End ChatBox -->    
         
         <!-- FOOTER -->
         <div class="Footer" w3-include-html="Footer.html"></div>
 
         <script>w3.includeHTML();</script>
         <script src="/js/product.js">           
+        </script>
+
+        <!-- Script ChatBox -->
+        <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+        <script src="/js/chatBox.js"></script>
+        <script>
+          function openChat() {
+            document.getElementById("myChat").style.display = "block";
+          }
+          function closeChat(){
+            document.getElementById("myChat").style.display = "none"
+          }
         </script>
        
         
