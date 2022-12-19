@@ -11,6 +11,7 @@ body{
 }
 #address_list:first-child{
     border-bottom: 2px solid #D3D3D3;
+    padding: 15px 15px 10px;
 }
 #btn_add_address{
     margin-right: 15px;

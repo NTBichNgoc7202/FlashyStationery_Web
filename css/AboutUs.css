@@ -27,6 +27,23 @@
 #intro_desc{
     text-align: justify;
 }
+
+/* Các giá trị */
+#values{
+    margin-top: 20px;
+}
+#values h4{
+    text-align: center;
+    color: #5D5C78;
+    font-family: 'Times New Roman', Times, serif;
+}
+#values p{
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Chính sách */
 #policy{
     margin: 50px 0px 0px;
 }
@@ -64,7 +81,10 @@
     #intro_content{
         margin: 10px 0px;
     }
-    #intro_desc{
+    #values h4{
+        font-size: 1.5em;
+    } 
+    #intro_desc, #values{
         font-size: 0.7em;
         margin: 10px 0px;
         padding: 0px;
