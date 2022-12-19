@@ -10641,8 +10641,7 @@ a:focus {
     font-size: 2rem;
   }
   .sidebar.toggled .sidebar-brand .sidebar-brand-text {
-    width: 120px;
-    height: 100px;
+    object-fit: contain;
     display: flex;
   }
   .sidebar.toggled .sidebar-heading {
