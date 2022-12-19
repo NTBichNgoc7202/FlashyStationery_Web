@@ -3,7 +3,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 .body{
-    padding: 0px;
+    padding: 12px;
     margin: 0px;
 }
 
@@ -17,6 +17,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
+    padding: 0px;
 }
 
 #product-detail-row{
@@ -329,6 +330,9 @@ h2 {
     font-weight: bolder;
     padding: 0px;
 }
+#product-description.col-12{
+    padding: 0px;
+}
 #list-detail-description {
     padding: 0px;
 }
@@ -336,17 +340,19 @@ h2 {
     margin-left: 20px;
 }
 
-/**Đánh giá**/
+/**rating**/
 .product-rating-overview {
     background-color:white ;
-    
-    
+    text-align: center; 
+    padding: 10px;
+    border: 1px solid #5D5C78;
+    border-radius: 10px;
 }
-#score-rate {
-    color: #FF8E8E;
-    font-weight: 500;
-    font-size: 30px;
+.align-items-center.text-center{
+    border-radius: 10px;
+    box-shadow: var(--shadow);
 }
+
 .product-detail-overview-total{
     font-size: larger;
     font-weight: 500;
@@ -358,6 +364,9 @@ h2 {
 .progress{
     height: 10px;
     border-radius: 5px;
+}
+#boder-rating {
+    padding: 0px;
 }
 /**recommend**/
 .card{
@@ -387,6 +396,43 @@ h2 {
 .col-md-3.item{
     margin: 30px;
     align-items: center;
+}
+/**Review**/
+#review-account{
+    
+    
+}
+
+#review-avatar {
+    text-align: right
+    
+}
+#review-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.bxs-star.bx {
+    color: #ffc600;
+}
+
+.review-time{
+    color: #908fa6;
+    font-size: 10px;
+    }
+
+/**Reply**/
+.reply-review{
+    background-color: #ECECEC;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reply-content{
+    background-color: #C2C2C2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 /** Responsive Mobile **/
 @media screen and (max-width:520px) {
@@ -439,6 +485,9 @@ h2 {
         flex-direction: column;
         gap: 10px;
     }
+    .reply-info.container.row.col-md-6{
+        text-align: left;
+    }
 }
 
 /** Responsive Tablet **/
@@ -446,7 +495,7 @@ h2 {
    #product-detail-container{
     display: block;
     height: auto;
-    padding: 20px;
+    padding: 0px;
    }
     
 }
