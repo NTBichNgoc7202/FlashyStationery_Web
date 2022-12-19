@@ -14,6 +14,11 @@
     
         <!-- Gắn Menu -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
+    
+         <!-- Gan ChatBox -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+         <link rel="stylesheet" href="/css/ChatBox.css">
+    
     </head>
     <body>
         <div class="login">
@@ -39,6 +44,41 @@
             </div>
 
         </div>
+
+        <!-- Start ChatBox -->
+        <section>
+            <button class="chat-btn" onclick="openChat()"><i class="material-icons" > comment </i>Chat với Flashy</button>
+            <div class="chat-popup" id="myChat">
+              <div class="badge"><button type="button" class="btn cancel btn-danger" onclick="closeChat()"><i class="fa fa-times"></i></button></div>
+             
+                <div class="chat-area">
+                 <div class="income-msg">
+                     <img src="/images/circleilogoflashy.png" width="100%" class="avatar" alt="">
+                     <span class="msg"> Xin chào! Flashy Stationery có thể giúp gì cho bạn? Hãy để lại lời nhắn nhé.</span>
+                 </div>   
+                </div>
+                <div class="input-area">
+                    <input id="input-msg" type="text" placeholder="Soạn tin nhắn...">
+                    <button id="emoji-btn"> &#128525;</button>
+                    <button class="submit"> <i class="material-icons"> send</i></button>
+                </div>
+            </div>
+        </section>
+        <!-- End ChatBox -->
+  
+
+         <!-- Script ChatBox -->
+         <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+         <script src="/js/chatBox.js"></script>
+         <script>
+           function openChat() {
+             document.getElementById("myChat").style.display = "block";
+           }
+           function closeChat(){
+             document.getElementById("myChat").style.display = "none"
+           }
+         </script>
+ 
 
     </body>
 
