@@ -16,28 +16,14 @@
     margin: 0px;
     padding: 0px;}
 
-.twobox{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: #D8BDC1;
-    border-radius: 30pt;
-    margin: 10px;
+.blogday{
+    background-color: #5D5C78;
+    border: none; 
+    font-size: 13pt;
+     color: aliceblue; 
+     text-decoration: solid;
 }
-.twobox.left{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    -webkit-line-clamp: 2;
-    margin-right: 23px;
-}
-.twobox.right{
-    width: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    -webkit-line-clamp: 2;
-    margin-left: 23px
-}
+
 
 /* Màn hình điện thoại */
 @media (max-width: 767px) {
