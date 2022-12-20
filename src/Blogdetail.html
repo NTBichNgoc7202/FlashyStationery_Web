@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Blog.css" >
+    <link rel="stylesheet" href="/css/Product.css" >
+    <title>Bảng tin Flashy</title>
+     <!-- Gắn Header -->
+     <script src="https://www.w3schools.com/lib/w3.js"></script>
+     <!-- Gắn Menu -->
+    <script src="https://www.w3schools.com/lib/21
+    w3.js"></script>
+    <!-- Dùng Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"   href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Gan ChatBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="/css/ChatBox.css">
+    <script>
+        function setColor(btn, color){
+            var count=1;
+            var property = document.getElementById(btn);
+            if (count == 0){
+                property.style.backgroundColor = "#FFFFFF"
+                count=1;        
+            }
+            else{
+                property.style.backgroundColor = "#FBD3CA"
+                property.style.color = "#5D5C78"
+                count=0;
+            }
+        
+        }
+        </script>
+
+</head>
+<body>
+    <div class="Header" w3-include-html="header.html"></div>
+    <div class="container">
+        <br><h5><a href="/src/Blog.html">Bảng tin Flashy</h5></a> <br>
+        <div class="blogdetail">
+            <h3>Top 4 mẫu bút bi có kiểu dáng "độc lạ" nhất hiện nay</h3>
+            <h5>Những cây bút bi rất quen thuộc đối với chúng ta, đặc biệt đối với học sinh, sinh viên. Hãy cùng Flashy Stationery làm sống động góc học tập của bạn hơn bằng top 4 mẫu bút bi có kiểu dáng "độc lạ" nhất hiện nay!</h5><br>
+            <img src="/images/Blog_3.jpg"><br>
+            <br><h5>Các mẫu bút độc đáo và lạ mắt có thể làm bàn học của bạn thêm màu sắc hoặc cũng có thể là món quà sinh nhật dễ thương cho bạn bè hoặc các em nhỏ ở nhà đấy!</h5><br>
+            <ol>
+                <li>Bút bi hình thú <h5>Những con vật dễ thương như mèo, chó, kỳ lân và ếch với đủ màu sắc sẽ là món quà thích hợp cho các bạn học sinh, sinh viên.<br><br>
+                    Bút có màu mực là màu xanh dễ viết màu mực tươi sáng. Bạn có thể tìm mua các sản phẩm này tại: Shopee, Tiki và Lazada hoặc qua các nhà sách, tiệm bán văn phòng phẩm.</h5>
+                <img src="/images/blogdetail1.jpg"></li>
+                <li>Bút bi hình trái cây<h5>Bút bi đầy màu sắc và có hình dạng trái cây bắt mắt sẽ giúp bạn học tập cũng như mỗi lần nhìn vào chúng có thể cảm thấy thoải mái hơn vì độ dễ thương của chúng.<br><br>
+                    
+                    Bút có trọng lượng nhẹ giúp bạn không bị mỏi tay khi viết lâu, mực ra đều không bị quá đậm hoặc nhạt. Ngoài ra sản phẩm còn có nam châm giúp bạn có thể đính lên các bề mặt như tủ lạnh để tiện cho việc ghi chú. Thật là tiện lợi!</h5>
+                    <img src="/images/Blog_3.jpg"></li>
+                <li>Bút bi hình viên đạn<h5>Dành cho những bạn cá tính thích sự mạnh mẽ cho hộp bút của mình hoặc đơn giản là bạn muốn một món quà sinh nhật độc lạ cho bạn bè. Chiếc bút này nhìn thoáng qua trông như một viên đạn và sẽ rất thích hợp với bạn đấy!
+                </h5><img src="/images/blogdetail2.jpg"></li>
+                <li>Bút bi củ cà rốt<h5>Sản phẩm bút cà rốt được rất nhiều người sử dụng bởi vì sự dễ thương của nó. Chắc chắn những bạn học sinh nhỏ tuổi sẽ thích mê những cây bút màu cam sặc sỡ này.<br><br>
+
+                    Bút dài 16 cm có màu cam với thân làm bằng nhựa. Màu mực của bút là màu đen với chất mực gel rất dễ dùng đầu bút nhỏ 0.38 mm tạo ra những nét chữ thanh mảnh dễ viết.</h5>
+                <img src="/images/blogdetail3.jpg"></li>
+            </ol>
+            <div >
+                <button class="button" style="float: right;">Chia sẻ</button>
+                <input class="button" type="button" id="button" value = "Hữu ích"  onclick="setColor('button', '#FBD3CA')";/>
+            </div>
+        </div> 
+        <h5><b>Mua bút bi chất lượng tại Flashy Stationey</b></h5>
+    </div>
+    
+    <div id="product-detail-container" class="container">
+        <div class="single-product">
+            <!--IMAGE - CONTENT-->
+            <div class="row" id="product-detail-row">
+                <div class="col-6" id="product-gallery">
+                    <div class="product-gallery">
+                        <div>
+                            <img style="float: right;" width="80%" id="product-picture-big-img" src="/images/blogdetail4.jpg" alt="" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6" id="product-content">
+                    <div id="breadcrumb" class="col-8">
+                        <span><a href="/src/Home.html">Flashy</a></span>
+                        <span><a href="#">Bút</a></span>
+                        <span class="active">Bút bi</span>
+                    </div>
+
+                    <div class="product-information"><h2><b>BÚT HÌNH THÚ NGỘ NGHĨNH</b></h2></div>
+                    
+                        <div class="product-price">
+                            <span style="background-color: #5D5C78; color: aliceblue; margin-bottom: 10pt;" class="price">5.000</span>
+                        </div>
+
+                        <div class="amount-buttons" id="amount">
+                            <input class="minus is-form" onclick="handleMinus()" type="button" value="-">
+                            <input aria-label="quantity" id="quantity-buy" class="input-qty" max="Số tối đa" min="Số tối thiểu" name="" type="number" value="1">
+                            <input class="plus is-form" onclick="handlePlus()" type="button" value="+">
+                          </div>
+                      
+                        <div class="product-btn-group">
+                            <div class="button buy-now"><i class='bx bxs-zap' ></i> Mua ngay</div>
+                            <div class="button add-cart"><i class='bx bxs-cart' ></i> Thêm vào giỏ hàng</div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div style="margin-bottom: 20pt;" class="container">
+            <br><h5><b>Xem thêm bài viết:</b></h5>
+            <h6 style="text-decoration: underline;">> Cách tẩy mực bút bi trên giấy nhanh chóng, hiệu quả</h6>
+            <h6 style="text-decoration: underline;">> Những cách trang trí sổ cực đẹp chỉ với sticker mà vẫn khoa học, bắt mắt</h6>
+            <br><h5><b>Bình luận:</b></h5>
+            <img width="5%" src="/images/avatar.jpg">
+            <input type="text" name="comment" value="Để lại bình luận của bạn..." size="120"><br>
+            </div>
+        
+            
+
+    <!-- Start ChatBox -->
+    <section>
+        <button class="chat-btn" onclick="openChat()"><i class="material-icons" > comment </i>Chat với Flashy</button>
+        <div class="chat-popup" id="myChat">
+          <div class="badge"><button type="button" class="btn cancel btn-danger" onclick="closeChat()"><i class="fa fa-times"></i></button></div>
+         
+            <div class="chat-area">
+             <div class="income-msg">
+                 <img src="/images/circleilogoflashy.png" width="100%" class="avatar" alt="">
+                 <span class="msg"> Xin chào! Flashy Stationery có thể giúp gì cho bạn? Hãy để lại lời nhắn nhé.</span>
+             </div>   
+            </div>
+            <div class="input-area">
+                <input id="input-msg" type="text" placeholder="Soạn tin nhắn...">
+                <button id="emoji-btn"> &#128525;</button>
+                <button class="submit"> <i class="material-icons"> send</i></button>
+            </div>
+        </div>
+      </section>
+    <!-- End ChatBox -->
+
+
+    <div class="Footer" w3-include-html="Footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <!-- Script ChatBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="/js/chatBox.js"></script>
+    <script>
+      function openChat() {
+        document.getElementById("myChat").style.display = "block";
+      }
+      function closeChat(){
+        document.getElementById("myChat").style.display = "none"
+      }
+    </script>
