@@ -25,6 +25,36 @@
      color: aliceblue; 
      text-decoration: solid;
 }
+.blogdetail h3{
+   color: #5D5C78;
+   font-weight: bold;
+}
+.blogdetail img{
+    width: 100%;
+    border-radius: 10pt;
+    
+}
+.blogdetail h4 {
+    color: black;
+    
+}
+.blogdetail h5{
+    color: black;
+}
+.blogdetail ol{
+    font-size: 18pt;
+    font-weight: bold;
+    color: #5D5C78;
+}
+.button{
+    font-size: 18pt;
+    margin: 10pt;
+    background-color: #5D5C78;
+    color: #F7F8F4;
+    border: none;
+    font-weight: bold;
+    
+}
 
 
 /* Màn hình điện thoại */
