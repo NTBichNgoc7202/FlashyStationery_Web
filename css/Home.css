@@ -7,14 +7,21 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
-
-  
+ 
+ 
   .item{
     display: flex;
     flex-wrap: nowrap;
     border-radius: 20px;
   }
-  
+ 
+  .col-3 a{
+    color: rgba(216, 189, 193, 1);
+  }
+  .col-3 a:hover{
+    color: rgba(216, 189, 193, 1);
+    text-decoration: none;
+  }
   .col-3 h5{
       text-align: center;
       padding-top: 10px;
@@ -22,8 +29,8 @@
       font-weight: 600;
   }
   .col-3 img{
-      background-color: rgb(251, 211, 202, 0.80); 
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+      background-color: rgb(251, 211, 202, 0.80);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       display: block;
       margin-left: auto;
@@ -36,10 +43,10 @@
   }
   .col-3 img:hover{
       opacity: 0.5;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .card:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   .container h2{
       color: rgba(93, 92, 120, 1);
@@ -48,7 +55,7 @@
   #heading {
     color: rgba(93, 92, 120, 1);
     background: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 700;
     padding: 10px;
     margin-bottom: 10px;
@@ -56,7 +63,7 @@
   #heading button{
     font-weight: 700;
   }
-
+ 
   .col-sm-3 img{
       display: block;
       margin-left: auto;
@@ -82,6 +89,13 @@
       text-align: center;
       font-weight: 700;
   }
+  .card a{
+    color: black;
+  }
+  .card a:hover {
+    color: black;
+    text-decoration: none;
+  }
   .card-body{
       text-align: center;
       height: max-content;
@@ -99,8 +113,8 @@
   .card-img-top:hover{
       opacity: 0.5;
   }
-
-
+ 
+ 
   /* Màn hình điện thoại */
 @media (max-width: 767px) {
     .col-3 h5{
@@ -143,9 +157,7 @@
       font-weight: 500;
       font-size: 1.1em;
     }
+    .card-text{
+      font-size: 0.5em;
+    }
 }
-  
-
-
-  
-  
