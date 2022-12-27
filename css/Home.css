@@ -15,6 +15,9 @@
     border-radius: 20px;
   }
   
+  .col-3 a{
+    color: rgba(216, 189, 193, 1);
+  }
   .col-3 h5{
       text-align: center;
       padding-top: 10px;
