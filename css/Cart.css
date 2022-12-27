@@ -628,7 +628,7 @@
     transition: all 0.1s linear;
 }
 input[type="radio"]:checked {
-    background: url(../backend/images/check-mark.png) #5d5c78 center no-repeat;
+    background: url(../images/check-mark.png) #5d5c78 center no-repeat;
 }
 input[type="radio"]:disabled{
     background: transparent;
