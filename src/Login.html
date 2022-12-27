@@ -15,21 +15,19 @@
         <!-- Gắn Menu -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
     
-         <!-- Gan ChatBox
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-         <link rel="stylesheet" href="/css/ChatBox.css"> -->
+         
     
     </head>
     <body>
         <div class="Header" w3-include-html="Header.html"></div>
         <div class="container">
             <div class="cartegory-top row">
-                <p>Trang chủ</p> <span>&#62; </span> <p>Sản phẩm</p> <span>&#62; </span> <p>Tất cả sản phẩm</p>
+                <p>Trang chủ</p> <span>&#62; </span> <p>Danh mục</p> <span>&#62; </span> <p>Đăng nhập</p>
             </div>
         </div>
         <section class="cartegory">
             <div class="popup active" id="id01">
-                <div class="close-btn" onclick="toggle()">&times;</div>
+                <div class="close-btn" onclick="toggle()"><a href="Home.html">&times;</a></div>
                 <form class="form" name="signin">
                     <img src="/images/logo.png" class="center-img">
                     <h2 >ĐĂNG NHẬP</h2>
@@ -43,7 +41,7 @@
                     <div class="form-element">
                         <label for="password">Mật khẩu: </label>
                         <div class="input-box">
-                            <input type="password" id="myInput" placeholder="Enter your password">
+                            <input type="password" id="myInput" placeholder="Nhập mật khẩu">
                             <span class="eye" onclick="myFunction()"> 
                     <i id="hide1" class="fa fa-eye" style="color: #031824; font-size: 13"></i>
                     <i id="hide2" class="fa fa-eye-slash" style="color: #031824; font-size: 13"></i>
@@ -54,13 +52,14 @@
                     <div class="form-element">
                         <input type="checkbox" id="remember-me">
                         <label for="remember-me">Ghi nhớ cho lần đăng nhập sau! </label>
-                        <button id="reset-pass" onclick="resetpwd()">Quên mật khẩu?</button>
+                        <button id="reset-pass" onclick="resetpwd()"><a href="ResetPassword.html">Quên mật khẩu?</a></button>
+
                     </div>
         
         
                     <div class="form-element">
                         <div class="form-but">
-                            <button type="button" id="signin" onclick="toggle()">ĐĂNG NHẬP</button>
+                            <button type="button" id="signin" onclick="toggle()"><a href="Home.html">ĐĂNG NHẬP</a></button>
                         </div>
                     </div>
                 
@@ -69,7 +68,7 @@
                     </div>
                     <div class="form-element">
                         <div class="form-but">
-                            <button type="button" id="show-signup" onclick="signup()">TẠO TÀI KHOẢN MỚI</button>
+                            <button type="button" id="show-signup" onclick="signup()"><a href="Register.html">TẠO TÀI KHOẢN MỚI</a></button>
                         </div>
                     </div>
         

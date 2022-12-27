@@ -32,7 +32,7 @@
                 <div class="row">
                     <div id="user_profile_menu" class="col-md-3 col-12">
                         <ul>
-                            <li id="menu_title"><h5>Tài khoản</h5></li>
+                            <li id="menu_title"><h4>Tài khoản</h4></li>
                             <li><a href="UserProfile.html">Thông tin tài khoản</a></li>
                             <li><a href="MyOrder.html" class="active">Đơn hàng của tôi</a></li>
                             <li><a href="AddressBook.html">Sổ địa chỉ</a></li>
@@ -52,15 +52,16 @@
                             </ul>
                         </div>
 
+                        <!-- Đơn hàng 1 -->
                         <div id="my_orders" class="container">
                             <div id="order_id_status" class="row justify-content-between">
                                 <p id="order_id" class="col-auto">Mã đơn hàng: 22121012345</p>
                                 <p id="order_status" class="col-auto">Hoàn thành</p>
                             </div>
-                            <div>
+                            <div id="my_order_order">
                                 <div id="my_order_products" class="row">
                                     <div id="product" class="col-md-6 col-12">
-                                        <div class="row">
+                                        <a href="" class="row" style="text-decoration: none;">
                                             <img class="col-4" src="/images/SoCongLoxo.png">
                                             <div id="product_detail" class="col-8">
                                                 <p id="product_name" class="col-12">Sổ Binder File Caro B5 còng sắt 26 chấu 80 tờ</p>
@@ -70,10 +71,10 @@
                                                     <p id="product_price" class="col-auto">78.000đ</p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                     <div id="product" class="col-md-6 col-12">
-                                        <div class="row">
+                                        <a href="" class="row" style="text-decoration: none;">
                                             <img class="col-4" src="/images/SoCaro.png">
                                             <div id="product_detail" class="col-8">
                                                 <p id="product_name" class="col-12">Sổ lò xo kép Caro 200 trang B5 giấy dày chống lem</p>
@@ -83,12 +84,72 @@
                                                     <p id="product_price" class="col-auto">90.000đ</p>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div id="total_cost" class="row justify-content-end">
                                     <p style="padding-right: 5px;">Thành tiền:</p>
                                     <h5>190.000đ</h5>
+                                </div>
+                                <div id="buttons" class="row justify-content-end">
+                                    <button type="button" id="btn_contact">Liên hệ</button>
+                                    <button type="button" id="btn_rebuy">Mua lại</button>
+                                    <button type="button" id="btn_review">Đánh giá</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Đơn hàng 2 -->
+                        <div id="my_orders" class="container">
+                            <div id="order_id_status" class="row justify-content-between">
+                                <p id="order_id" class="col-auto">Mã đơn hàng: 22112597531</p>
+                                <p id="order_status" class="col-auto">Hoàn thành</p>
+                            </div>
+                            <div id="my_order_order">
+                                <div id="my_order_products" class="row">
+                                    <div id="product" class="col-md-6 col-12">
+                                        <a href="" class="row" style="text-decoration: none;">
+                                            <img class="col-4" src="/images/GiayCaro.png">
+                                            <div id="product_detail" class="col-8">
+                                                <p id="product_name" class="col-12">Ruột sổ còng caro 100 tờ B5</p>
+                                                <p id="product_type" class="col-12">Phân loại: 100 tờ</p>
+                                                <div class="row justify-content-between">
+                                                    <p id="product_quantity" class="col-auto">x2</p>
+                                                    <p id="product_price" class="col-auto">70.000đ</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="product" class="col-md-6 col-12">
+                                        <a href="" class="row" style="text-decoration: none;">
+                                            <img class="col-4" src="/images/SoCaro.png">
+                                            <div id="product_detail" class="col-8">
+                                                <p id="product_name" class="col-12">Sổ lò xo kép Caro 200 trang B5 giấy dày chống lem</p>
+                                                <p id="product_type" class="col-12">Phân loại: màu vàng</p>
+                                                <div class="row justify-content-between">
+                                                    <p id="product_quantity" class="col-auto">x1</p>
+                                                    <p id="product_price" class="col-auto">45.000đ</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="product" class="col-md-6 col-12">
+                                        <a href="" class="row" style="text-decoration: none;">
+                                            <img class="col-4" src="/images/Products_RemovedBackground/toolstudy/butmura.png">
+                                            <div id="product_detail" class="col-8">
+                                                <p id="product_name" class="col-12">Bút bi gel Mura ngòi 0.5mm</p>
+                                                <p id="product_type" class="col-12">Phân loại: màu đỏ</p>
+                                                <div class="row justify-content-between">
+                                                    <p id="product_quantity" class="col-auto">x2</p>
+                                                    <p id="product_price" class="col-auto">16.000đ</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="total_cost" class="row justify-content-end">
+                                    <p style="padding-right: 5px;">Thành tiền:</p>
+                                    <h5>153.000đ</h5>
                                 </div>
                                 <div id="buttons" class="row justify-content-end">
                                     <button type="button" id="btn_contact">Liên hệ</button>

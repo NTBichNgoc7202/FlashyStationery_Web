@@ -15,25 +15,49 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-        <!-- Gan ChatBox -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-        <link rel="stylesheet" href="/css/ChatBox.css"> -->
-
     </head>
     <body>
         
         <div class="Header" w3-include-html="Header.html"></div>
+        <div class="container">
+            <div class="cartegory-top row-custom">
+                <p>Trang chủ</p> <span>&#62; </span> <p>Sản phẩm</p> <span>&#62; </span> <p>Tất cả sản phẩm</p>
+            </div>
+        </div>
         <section class="cartegory">
             <div class="container">
-                <div class="cartegory-top row">
-                    <p>Trang chủ</p> <span>&#62; </span> <p>Sản phẩm</p> <span>&#62; </span> <p>Tất cả sản phẩm</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
+                <div class="row-custom">
                     <div class="cartegory-left">
                         <ul>
                             <li class="cartegory-left-li"><a href="#">SỔ</a>
+                                <ul>
+                                    <li><a href="">HÀNG MỚI VỀ</a></li>
+                                    <li><a href="">HÀNG SALE OFF</a></li>
+                                    <li><a href="">HÀNG TẶNG KÈM</a></li>
+                                </ul>
+                            </li>
+                            <li class="cartegory-left-li"><a href="#">SỔ</a>
+                                <ul>
+                                    <li><a href="">HÀNG MỚI VỀ</a></li>
+                                    <li><a href="">HÀNG SALE OFF</a></li>
+                                    <li><a href="">HÀNG TẶNG KÈM</a></li>
+                                </ul>
+                            </li>
+                            <li class="cartegory-left-li"><a href="#">DỤNG CỤ HỌC TẬP</a>
+                                <ul>
+                                    <li><a href="">HÀNG MỚI VỀ</a></li>
+                                    <li><a href="">HÀNG SALE OFF</a></li>
+                                    <li><a href="">HÀNG TẶNG KÈM</a></li>
+                                </ul>
+                            </li>
+                            <li class="cartegory-left-li"><a href="#">FILE</a>
+                                <ul>
+                                    <li><a href="">HÀNG MỚI VỀ</a></li>
+                                    <li><a href="">HÀNG SALE OFF</a></li>
+                                    <li><a href="">HÀNG TẶNG KÈM</a></li>
+                                </ul>
+                            </li>
+                            <li class="cartegory-left-li"><a href="#">NHÃN VỞ</a>
                                 <ul>
                                     <li><a href="">HÀNG MỚI VỀ</a></li>
                                     <li><a href="">HÀNG SALE OFF</a></li>
@@ -46,13 +70,13 @@
                                     <li><a href="">HÀNG SALE OFF</a></li>
                                     <li><a href="">HÀNG TẶNG KÈM</a></li>
                                 </ul></li>
-                            <li class="cartegory-left-li"><a href="#">DỤNG CỤ HỌC TẬP</a>
+                            <li class="cartegory-left-li"><a href="#">GIẤY BAO CÁC LOẠI</a>
                                 <ul>
                                     <li><a href="">HÀNG MỚI VỀ</a></li>
                                     <li><a href="">HÀNG SALE OFF</a></li>
                                     <li><a href="">HÀNG TẶNG KÈM</a></li>
                                 </ul></li>
-                            <li class="cartegory-left-li"><a href="#">VỞ CÁC LOẠI</a>
+                            <li class="cartegory-left-li"><a href="#">ĐỒ TRANG TRÍ</a>
                                 <ul>
                                     <li><a href="">HÀNG MỚI VỀ</a></li>
                                     <li><a href="">HÀNG SALE OFF</a></li>
@@ -61,173 +85,129 @@
                         </ul>
                     </div>
 
-                    <div class="cartegory-right row">
-                        <div class="cartegory-right-top-item">
-                            <h2>TẤT CẢ SẢN PHẨM</h2>
+                    <div class="cartegory-right row-custom">
+                        <div class="khung2 row-custom">
+                            <div class="cartegory-right-top-item">
+                                <h2>TẤT CẢ SẢN PHẨM</h2>
+                            </div>
+                            <div class="cartegory-right-top-item">
+                                <p>Sắp xếp theo: </p>
+                            </div>
+                            <div class="cartegory-right-top-item">
+                                <select name="" id="">
+                                    <option value="">Giá từ thấp đến cao</option>
+                                    <option value="">Giá từ thấp đến cao</option>
+                                    <option value="">Mới nhất</option>
+                                    <option value="">Cũ nhất</option>
+                                    <option value="">Bán chạy nhất</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="cartegory-right-top-item">
-                            <p>Sắp xếp theo: </p>
-                        </div>
-                        <div class="cartegory-right-top-item">
-                            <select name="" id="">
-                                <option value="">Giá từ thấp đến cao</option>
-                                <option value="">Giá từ cao đến thấp</option>
-                                <option value="">Mới về</option>
-                            </select>
-                        </div>
-                        <div class="cartegory-right-content row">
-                            <!-- <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
-                                <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div> -->
+                        <div class="cartegory-right-content row-custom">
                             <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/notebook/notebook1.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Sổ lò xo kép caro 200 trang B5</a>
+                                    <div href=" " class="product-price "><p>45.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div>
                             <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/book/book1.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
+                                    <a class="product-name ">Vở kẻ ngang Click 260 trang A4</a>
+                                    <div href=" " class="product-price "><p>29.000<sup>VNĐ</sup></p>
+                                    </div>
+                                </div>
+                            </div> <div class=" cartegory-right-content-item">
+                                <div class="product-item">
+                                    <a class="product-thumb">
+                                        <img src="/images/Products_RemovedBackground/notebook/ruotsocongcaro100to.png" alt="" onclick="OpenDetail()">
+                                    </a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                </div>
+                                <div class="product-info">
+                                    <a class="product-name ">Ruột sổ còng caro B5 100 tờ giấy dày chống lem</a>
                                     <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div> <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/files/filecongsata5.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Binder File còng sắt caro/ dot A5</a>
+                                    <div href=" " class="product-price "><p>28.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div> <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/notebook/planneritem.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Sổ kế hoạch lò xo kép B5 Study Planner 160 trang</a>
+                                    <div href=" " class="product-price "><p>75.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div> <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/notebook/socongbianhua.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Sổ Binder File Caro B5 còng sắt 26 chấu 80 tờ</a>
+                                    <div href=" " class="product-price "><p>78.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div> <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/notebook/soloxokepdot200tr.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
-                                    </div>
-                                </div>
-                            </div> <div class=" cartegory-right-content-item">
-                                <div class="product-item">
-                                    <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
-                                    </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
-                                </div>
-                                <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Sổ lò xo kép Dot Grid B5 200 trang</a>
+                                    <div href=" " class="product-price "><p>51.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div>
                             <div class=" cartegory-right-content-item">
                                 <div class="product-item">
                                     <a class="product-thumb">
-                                        <img src="/images/VoNgang.png" alt="" onclick="OpenDetail()">
+                                        <img src="/images/Products_RemovedBackground/notebook/notebook1.png" alt="" onclick="OpenDetail()">
                                     </a>
-                                    <a class="buy-now" onclick="OpenDetail()">Mua ngay</a>
+                                    <a href="Product.html" class="buy-now" onclick="OpenDetail()">Mua ngay</a>
                                 </div>
                                 <div class="product-info">
-                                    <a class="product-name ">GIẤY CARO</a>
-                                    <div href=" " class="product-price "><p>35.000<sup>VNĐ</sup></p>
+                                    <a class="product-name ">Sổ lò xo kép Caro 200 trang B5</a>
+                                    <div href=" " class="product-price "><p>45.000<sup>VNĐ</sup></p>
                                     </div>
                                 </div>
                             </div>
                             
-
-                            <!-- <div class="cartegory-right-content-item">
-                                <img src="/images/GiayCaro.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/SoCaro.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-    
-                            </div>
-                            <div class="cartegory-right-content-item">
-                                <img src="/images/VoNgang.png" alt="">
-                                <h2>GIẤY CARO</h2>
-                                <p>35.000<sup>VNĐ</sup></p>
-                            </div> -->
                             
                         </div>
 
-                        <div class="cartegory-right-bottom row">
+                        <div class="cartegory-right-bottom row-custom">
                             <div class="cartegory-right-bottom-items">
                                 <p>Hiển thị 2 <span>|</span>4 sản phẩm</p>
                             </div>
@@ -240,27 +220,6 @@
             </div>
         </section>
 
-         <!-- Start ChatBox -->
-         <!-- <section>
-            <button class="chat-btn" onclick="openChat()"><i class="material-icons" > comment </i>Chat với Flashy</button>
-            <div class="chat-popup" id="myChat">
-              <div class="badge"><button type="button" class="btn cancel btn-danger" onclick="closeChat()"><i class="fa fa-times"></i></button></div>
-             
-                <div class="chat-area">
-                 <div class="income-msg">
-                     <img src="/images/circleilogoflashy.png" width="100%" class="avatar" alt="">
-                     <span class="msg"> Xin chào! Flashy Stationery có thể giúp gì cho bạn? Hãy để lại lời nhắn nhé.</span>
-                 </div>   
-                </div>
-                <div class="input-area">
-                    <input id="input-msg" type="text" placeholder="Soạn tin nhắn...">
-                    <button id="emoji-btn"> &#128525;</button>
-                    <button class="submit"> <i class="material-icons"> send</i></button>
-                </div>
-            </div>
-          </section> -->
-          <!-- End ChatBox -->
-
         <!--    footer-->
         <div class="Footer" w3-include-html="Footer.html"></div>
         <script>
@@ -268,16 +227,4 @@
         </script>
     </body>
     <script src="../js/script.js"></script>
-
-    <!-- Script ChatBox -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
-    <script src="/js/chatBox.js"></script> -->
-    <!-- <script>
-      function openChat() {
-        document.getElementById("myChat").style.display = "block";
-      }
-      function closeChat(){
-        document.getElementById("myChat").style.display = "none"
-      }
-    </script> -->
 </html>

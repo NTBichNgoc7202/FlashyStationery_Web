@@ -46,10 +46,11 @@
     border-radius: 15px;
     cursor: pointer;
 }
+.popup .close-btn a {
+    color: #5D5C78;
 
-.popup .close-btn:hover {
-    background: #5D5C78;
 }
+
 .popup .form h2 {
     text-align: center;
     color: #5D5C78;
@@ -124,6 +125,15 @@
     cursor: pointer;
     font-weight: bold;
 }
+.popup .form .form-element .form-but a{
+    color: #5D5C78;
+    font-weight: bold;
+}
+.popup .form .form-element .form-but a:hover{
+    color: #fff;
+}
+
+
 
 .eye {
     position: absolute;
@@ -180,3 +190,4 @@
     margin: 0 12px;
     font-size: 16px;
 }
+

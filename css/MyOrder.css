@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
 #my_order_container{
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 20px;
     background-color: #F7F8F4;
 }
 #my_orders{
@@ -18,6 +23,11 @@
     background-color: #FBD3CA;
     padding: 0px 10px;
     border-radius: 5px;
+    font-weight: 600;
+}
+#my_order_order{
+    margin-top: 25px;
+    padding-bottom: 10px;
 }
 #my_order_products{
     margin: 0px;
@@ -40,7 +50,7 @@
     color: #5D5C78;
 }
 #product_name{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.9em;
     text-align: justify;
 }
@@ -51,12 +61,16 @@
 #product_price{
     margin: 0px 15px;
     padding: 0px 10px;
-    background-color: #FBD3CA;
+    background-color: #D8BDC180;
     border-radius: 5px;
+    font-weight: 600;
 }
 #total_cost{
     margin: 20px 0px 0px;
     padding: 0px;
+}
+#total_cost h5{
+    font-weight: 600;
 }
 #buttons{
     margin: 0px;
@@ -68,6 +82,7 @@
     padding: 2px 20px;
     color: #5D5C78;
     font-size: 1.1em;
+    font-weight: 600;
 }
 #btn_rebuy{
     margin: 0px 10px;
