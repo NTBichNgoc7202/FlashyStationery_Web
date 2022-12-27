@@ -25,6 +25,11 @@
     font-weight: 600;
     font-size: 20px;
 }
+.container-fluid a:hover{
+    text-decoration: none;
+    color: white;
+}
+
 
 .container h4{
     font-weight: 700;

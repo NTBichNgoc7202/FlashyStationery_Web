@@ -29,6 +29,10 @@
 #product-content{
     width: 50%;
 }
+.product-btn-group a:hover{
+    text-decoration: none;
+
+}
 
 /** breadcrum **/
 .single-product #breadcrumb{
