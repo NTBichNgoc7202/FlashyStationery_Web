@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-
+ 
 .MainContact{
     margin: 0 ;
     padding: 0 ;
@@ -15,7 +15,7 @@
     padding: 20px;
 }
 .container-fluid:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .container-fluid h1 {
     font-weight: 700;
@@ -25,22 +25,27 @@
     font-weight: 600;
     font-size: 20px;
 }
-
+.container-fluid a:hover{
+    text-decoration: none;
+    color: white;
+}
+ 
+ 
 .container h4{
     font-weight: 700;
     color: rgba(93, 92, 120, 1);
     margin: 0 0 20px 0;
     background: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 10px;
 }
-
+ 
 iframe{
     max-width: 100%;
     /*     filter: invert(100%); */
 }
 .card:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card img{
     margin-left: auto;
@@ -65,7 +70,7 @@ form{
     width: 50%;
     font-size: 12px;
 }
-
+ 
 .form-btn{
     background: #5D5C78;
     color: rgba(251, 211, 202, 0.8);
@@ -74,7 +79,7 @@ form{
     border: none;
 }
 .form-btn:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     opacity: 0.7;
 }
 /* Màn hình điện thoại */
@@ -95,8 +100,3 @@ form{
     text-align: center;
     }
 }
-  
-
-
-
-
