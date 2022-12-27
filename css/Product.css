@@ -6,12 +6,12 @@
     padding: 12px;
     margin: 0px;
 }
-
+ 
 :root{
     --dark-purple: #5D5C78;
     --shadow: #949494;
 }
-
+ 
 #product-detail-container{
     display: flex;
     position: relative;
@@ -19,7 +19,7 @@
     justify-content: center;
     padding: 0px;
 }
-
+ 
 #product-detail-row{
     display: flex;
 }
@@ -29,7 +29,11 @@
 #product-content{
     width: 50%;
 }
-
+.product-btn-group a:hover{
+    text-decoration: none;
+ 
+}
+ 
 /** breadcrum **/
 .single-product #breadcrumb{
     margin: 10px 0px;
@@ -38,9 +42,9 @@
     border-radius: 8px;
     font-size: 15px;
 }
-
-
-
+ 
+ 
+ 
 #breadcrumb span{
     display: inline-flex;
     flex-direction: row;
@@ -50,7 +54,7 @@
 #breadcrumb span:not(:last-child)::after{
     content: '/';
 }
-
+ 
 #breadcrumb span a{
     text-decoration: none;
     color: rgb(78, 62, 89);
@@ -61,32 +65,32 @@
     color: rgb(175, 161, 186);
     font-weight: 500;
 }
-
+ 
 /** product image **/
-
+ 
 .single-product .product-gallery{
     width: 100%;
 }
-
+ 
 .product-gallery .product-picture-big{
     position: relative;
     display: block;
     width: 100%;
     margin: 10PX;
 }
-
+ 
 .product-picture-big img{
     display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-
+ 
 .product-gallery-slider{
     display: flex;
     margin: 0px;
 }
-
+ 
 .product-gallery-slider img{
     width: 90px;
     height: 90px;
@@ -96,7 +100,7 @@
 /** product title **/
 .product-title{
     margin-top: 5px;
-
+ 
 }
 .product-title h2{
     font-size: 32px;
@@ -112,16 +116,16 @@
     margin-bottom: 10px;
     align-items: center;
 }
-
+ 
 .product-rating span:not(.review){
     color: #ffc600;
 }
 .product-rating .review{
     align-items: center;
     margin-left: 3px;
-
+ 
 }
-
+ 
 /** Product price **/
 .product-price{
     display: flex;
@@ -129,8 +133,8 @@
     margin: 0px 0;
     align-items: center;
 }
-
-
+ 
+ 
 .product-price .price{
     font-size: 30px;
     font-weight: 700;
@@ -147,7 +151,7 @@
     font-size: 16px;
     font-weight: 500;
 }
-
+ 
 .product-sample-page .page-layout{
     margin: 5px 0;
     display: inline-flex;
@@ -155,7 +159,7 @@
     gap: 10px;
     cursor: pointer;
 }
-
+ 
 .product-sample-page .page-layout .page-input{
     display: none;
 }
@@ -173,13 +177,13 @@
     border: 3px solid #c9c8dc;
     background-color: #c9c8dc;
 }
-
+ 
 .product-sample-page .page-layout input[type="radio"]:checked + .page{
     background-color: var(--dark-purple);
     color: rgb(255, 255, 255);
     box-shadow: 0 3px 6px #949494;
-} 
-
+}
+ 
 /** Product Color **/
 .product-sample-color{
     margin: 10px 0;
@@ -194,7 +198,7 @@
     display: flex;
     gap: 10px;
 }
-
+ 
 .product-sample-color .color-layout label{
     border-radius: 4px;
     cursor: pointer;
@@ -203,14 +207,14 @@
     height: 40px;
     display: inline-block;
 }
-
+ 
 .product-sample-color .color-layout .pink{
     background-color: rgb(251, 169, 234);
 }
 .product-sample-color .color-layout .blue{
     background-color: rgb(77, 129, 250);
 }
-
+ 
 /**Quantity**/
 .amount-buttons {
     opacity:1;
@@ -259,16 +263,16 @@
     -webkit-appearance:none;
     margin:0;
 }
-
-
-
+ 
+ 
+ 
 /**BUTTON**/
-
+ 
 .product-sample-color .color-layout input[type="radio"]:checked + label{
     box-shadow: 0 3px 6px var(--shadow);
     background-color: rgb(1, 1, 1);
 }
-
+ 
 .product-sample-color .color-layout .color-input{
     display: none;
 }
@@ -292,16 +296,16 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
+ 
 .product-btn-group .buy-now i{
     font-size: 20px;
 }
 .product-btn-group .buy-now:hover{
     box-shadow: 0 3px 6px var(--shadow);
 }
-
+ 
 .product-btn-group .add-cart{
-    
+   
     background-color: #F8E9E2;
     color: #EE5C3C;
     border-radius: 4px;
@@ -315,14 +319,14 @@
     background: #F8E9E2;
     color: #EE5C3C;
 }
-
+ 
 /** divider **/
 .divider-light{
     background-color: #908fa6;
     height: 2px;
 }
-
-
+ 
+ 
 h2 {
     color: var(--dark-purple);
     font-size: 20px;
@@ -339,11 +343,11 @@ h2 {
 #list-detail-description li {
     margin-left: 20px;
 }
-
+ 
 /**rating**/
 .product-rating-overview {
     background-color:white ;
-    text-align: center; 
+    text-align: center;
     padding: 10px;
     border: 1px solid #5D5C78;
     border-radius: 10px;
@@ -352,7 +356,7 @@ h2 {
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
-
+ 
 .product-detail-overview-total{
     font-size: larger;
     font-weight: 500;
@@ -360,7 +364,7 @@ h2 {
 .star-detail{
     display: inline;
 }
-
+ 
 .progress{
     height: 10px;
     border-radius: 5px;
@@ -373,9 +377,9 @@ h2 {
     margin-right: 10px;
 }
 .card:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-
+ 
   .card-body{
     text-align: center;
     height: max-content;
@@ -392,20 +396,20 @@ h2 {
 .star span i {
     color: #ffc600;
 }
-
+ 
 .col-md-3.item{
     margin: 30px;
     align-items: center;
 }
 /**Review**/
 #review-account{
-    
-    
+   
+   
 }
-
+ 
 #review-avatar {
     text-align: right
-    
+   
 }
 #review-avatar img {
     width: 50px;
@@ -416,12 +420,12 @@ h2 {
 .bxs-star.bx {
     color: #ffc600;
 }
-
+ 
 .review-time{
     color: #908fa6;
     font-size: 10px;
     }
-
+ 
 /**Reply**/
 .reply-review{
     background-color: #ECECEC;
@@ -443,7 +447,7 @@ h2 {
     #product-detail-row{
         display: block;
     }
-
+ 
     #product-gallery{
         width: 100%;
         display: block;
@@ -452,7 +456,7 @@ h2 {
         width: 100%;
         position: relative;
     }
-
+ 
     .product-image .product-image-main{
         width: 100%;
         height: 280px;
@@ -460,11 +464,11 @@ h2 {
     .product-image-slider{
         gap: 5px;
     }
-
+ 
     .breadcrumb{
         display: none;
     }
-
+ 
     .product-title h2{
         font-size: 24px;
         line-height: 1.6rem;
@@ -475,7 +479,7 @@ h2 {
     .product-size .size-layout{
         display: block;
         margin: 10px 0;
-
+ 
     }
     .product-size .size-layout .size{
         padding: 6px 10px;
@@ -492,8 +496,8 @@ h2 {
         padding: 20px;
     }
 }
-
-
+ 
+ 
 /** Responsive Tablet **/
 @media  (min-width: 520px ) and (max-width: 1080px) {
    #product-detail-container{
@@ -501,5 +505,5 @@ h2 {
     height: auto;
     padding: 20px;
    }
-    
+   
 }
