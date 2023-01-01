@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="" rel="stylesheet">
-        <link href="/css/UserProfileMenu.css" rel="stylesheet">
-        <link href="/css/AddressBook.css" rel="stylesheet">
+        <link href="./css/UserProfileMenu.css" rel="stylesheet">
+        <link href="./css/AddressBook.css" rel="stylesheet">
 
         <!-- Gắn Header, Footer -->
         <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -19,7 +19,7 @@
 
     </head>
     <body>
-        <div class="Header" w3-include-html="Header.html"></div>
+        <div class="Header" w3-include-html="header.html"></div>
         
         <div id="address_book_container">
             <div class="container">
@@ -54,7 +54,7 @@
         <!-- Load address -->
         <script>
             var xhttp = new XMLHttpRequest();
-            var url = "../data/addressList.xml";
+            var url = "./data/addressList.xml";
             xhttp.open('GET', url, false);
 
             xhttp.onreadystatechange = function () {
